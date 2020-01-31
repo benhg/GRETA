@@ -2,7 +2,7 @@ import time
 import os 
 import sys
 
-from .data_generation import generate_data
+from data_generation import generate_data
 
 proteomefile = sys.argv[1]
 
@@ -10,7 +10,7 @@ generate_data(proteomefile)
 
 #data_generate.py creates filenames.txt
 
-for filename in open(filenames.txt):
+for filename in open("filenames.txt"):
     mvalue = str(filename)
     mvalue = mvalue.split("/n")[0]
     mvalue= mvalue.split('.fasta')[0]
@@ -19,8 +19,8 @@ for filename in open(filenames.txt):
     strsvalue = str(svalue.split('s')[1])
     svalue = int(strsvalue)
 
-    os.sys("mkdir " + mvalue)
-    os.sys("mkdir " + mvalue + "/gd")
+    os.makedirs(mvalue)
+    os.makedirs(f"{mvalue}/gd")
 
     #change directory to mvalue folder we just made
 
@@ -51,11 +51,15 @@ for filename in open(filenames.txt):
         if newoutput > threshold and (newoutput/originaloutput)>100: 
             #OUTPUT
             #LIST AS DEFINITE HOPPER
-
-        else :
-            if counter == 17: counter = 19
-            elif counter == 20 or counter == 7: counter = 0
-            else : counter = counter + 1
+            pass
+        else:
+            if counter == 17: 
+                counter = 19
+            elif counter == 20 or counter == 7: 
+                counter = 0
+            else: 
+                counter = counter + 1
 
     if output == 0:
         #LIST AS NEVER
+        pass
