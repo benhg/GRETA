@@ -1,9 +1,12 @@
 import time
 import os 
+import sys
 
-proteomefile = ''
+from .data_generation import generate_data
 
-#CALL data_generate.py(proteomefile)
+proteomefile = sys.argv[1]
+
+generate_data(proteomefile)
 
 #data_generate.py creates filenames.txt
 
