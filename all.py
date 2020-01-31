@@ -3,8 +3,10 @@ import os
 import sys
 
 from data_generation import generate_data
+from STAR_index import star_index
 
 proteomefile = sys.argv[1]
+directory = '/home/users/ellenrichards'
 
 generate_data(proteomefile)
 
@@ -20,11 +22,12 @@ for filename in open("filenames.txt"):
     svalue = int(strsvalue)
 
     os.makedirs(mvalue)
-    os.makedirs(f"{mvalue}/gd")
+    genome_dir = f"{mvalue}/gd"
+    os.makedirs(genome_dir)
 
     #change directory to mvalue folder we just made
 
-    #CALL STAR_index.py(mvalue)
+    star_index(directory, genome_dir, filename)
 
     #wait until done
 
