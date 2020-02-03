@@ -19,7 +19,7 @@ def generate_data(proteomefile, directory):
                 line = line.replace("|", "_")
                 line = line.split(" ")[0]
                 line = line[1::]
-                with open('filenames.txt', 'a') as f: #this makes a new files called filenames.txt
+                with open(f'{directory}/filenames.txt', 'a') as f: #this makes a new files called filenames.txt
                     f.write(line + '.fasta' + '\n')
             else :
                 next
@@ -34,8 +34,8 @@ def generate_data(proteomefile, directory):
                 line = line[1::]
                 line = line.replace("\n","")
                 subfile = line + '.fasta'
-                with open(subfile, 'w') as f:
+                with open(f'{directory}/{subfile}', 'w') as f:
                     f.write('>' + line + '\n') 
             else :
-                    with open(subfile, 'a') as f:
+                    with open(f'{directory}/{subfile}', 'a') as f:
                         f.write(line)
