@@ -7,6 +7,11 @@ import datetime
 from datetime import datetime 
 import csv
 
+import parsl
+from parsl.app.app import python_app, bash_app
+from parsl.configs.local_threads import config
+parsl.load(config)
+
 from data_generation import generate_data
 from STAR_index import star_index
 from STAR_align import star_align
@@ -15,7 +20,8 @@ proteomefile = sys.argv[1]
 directory = f'/home/users/ellenrichards/{sys.argv[2]}/'
 threshold = 1000
 
-os.makedirs(directory)
+if not os.path.isdir(directory):
+    os.makedirs(directory)
 
 generate_data(proteomefile, directory)
 
@@ -32,7 +38,8 @@ os.system(f"touch {directory}/index_hopping_output.txt")
 #csv_writer.writerow(csv_row)
 os.system(f"echo 'filename  uniquely  multi  totalReads  uniquelyAGAINST  multiAGAINST  totalreadsAGAINST  percRatio'  >> {directory}/index_hopping_output.txt")
 
-for filename in open(f"{directory}/filenames.txt"):
+@python_app
+def run_single_transcript(filename):
     os.chdir(directory)
     mvalue = str(f"{filename}")
     mvalue = mvalue.split("/n")[0]
@@ -43,7 +50,8 @@ for filename in open(f"{directory}/filenames.txt"):
     svalue  = int(svalue)
     strsvalue = str(svalue)
 
-    os.makedirs(f"{directory}/mvalue")
+    if not os.path.isdir(f"{directory}/{mvalue}"):
+        os.makedirs(f"{directory}/{mvalue}")
     genomeDir = f"{directory}{mvalue}/gd"
     os.makedirs(genomeDir)
 
@@ -141,3 +149,7 @@ for filename in open(f"{directory}/filenames.txt"):
 
     if output == 0:
         os.system("echo " + filename + f" >> {directory}/never.txt")
+        
+ if __name__ == "__main__":
+    for filename in open(f"{directory}/filenames.txt"):
+        run_single_transcript(filename) 
