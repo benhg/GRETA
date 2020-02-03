@@ -7,7 +7,7 @@ from datetime import datetime
 import csv
 
 
-def generate_data(proteomefile):
+def generate_data(proteomefile, directory):
     #code from Julia: cleans up files and creates individual files for each sequence
 
     with open(proteomefile) as f:
