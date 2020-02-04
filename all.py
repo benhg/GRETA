@@ -9,12 +9,27 @@ import csv
 
 import parsl
 from parsl.app.app import python_app, bash_app
-from parsl.configs.local_threads import config
+from parsl.config import Config
+from parsl.providers import GridEngineProvider
+from parsl.executors import HighThroughputExecutor
+from parsl.executors import ThreadPoolExecutor
+from parsl.addresses import address_by_route, address_by_query, address_by_hostname
+
+config = Config(
+    executors=[HighThroughputExecutor(
+                                      address=address_by_route(), 
+                                      provider=GridEngineProvider(
+                                                                  init_blocks=1, 
+                                                                  max_blocks=20), 
+                                      label="workers"),
+               ThreadPoolExecutor(label="login", max_threads=20)
+              ],
+)
+
+parsl.set_stream_logger() 
 parsl.load(config)
 
 from data_generation import generate_data
-from STAR_index import star_index
-from STAR_align import star_align
 
 proteomefile = sys.argv[1]
 directory = f'/home/users/ellenrichards/{sys.argv[2]}/'
@@ -38,8 +53,9 @@ os.system(f"touch {directory}/index_hopping_output.txt")
 #csv_writer.writerow(csv_row)
 os.system(f"echo 'filename  uniquely  multi  totalReads  uniquelyAGAINST  multiAGAINST  totalreadsAGAINST  percRatio'  >> {directory}/index_hopping_output.txt")
 
-@python_app
+#@python_app(executors=["login"])
 def run_single_transcript(filename):
+    filename = filename.strip()
     os.chdir(directory)
     mvalue = str(f"{filename}")
     mvalue = mvalue.split("/n")[0]
@@ -53,15 +69,16 @@ def run_single_transcript(filename):
     if not os.path.isdir(f"{directory}/{mvalue}"):
         os.makedirs(f"{directory}/{mvalue}")
     genomeDir = f"{directory}{mvalue}/gd"
-    os.makedirs(genomeDir)
+    if not os.path.isdir(genomeDir):
+        os.makedirs(genomeDir)
 
     os.chdir(directory + mvalue)  #change directory to mvalue folder we just made
 
-    star_index(directory, genomeDir, filename)
+    (star_index(directory, genomeDir, filename).result())
 
     #wait until done
-    while not os.path.exists("Log.out"): 
-        time.sleep(5) 
+    #while not os.path.exists("Log.out"): 
+    #    time.sleep(5) 
             
     star_align(directory, mvalue, strsvalue, genomeDir)
     
@@ -149,7 +166,40 @@ def run_single_transcript(filename):
 
     if output == 0:
         os.system("echo " + filename + f" >> {directory}/never.txt")
-        
- if __name__ == "__main__":
+
+@bash_app(executors=["workers"])
+def star_index(directory, genomeDir, filename):
+  filename = filename.strip()
+  indexingstar = f'STAR --runThreadN 1 --runMode genomeGenerate --genomeDir  "{genomeDir}" --genomeFastaFiles "{directory}{filename}" --genomeSAindexNbases 2'
+  # indexing = f"SGE_Batch -r '{genomeDir}/run_dir' -c {indexingstar} -P1"                                                                                                                                                
+  print(indexingstar)
+  return indexingstar
+
+@bash_app(executors=["workers"])
+def star_align(directory, mvalue, svalue, genomeDir):
+    import os
+
+    svalue = int(svalue)
+    svalue = str(svalue)
+    outfilenameprefix = directory + mvalue +"/"+ svalue
+
+    if int(svalue) < 10:
+        fullS = "s00" + str(svalue)
+    else:
+        fullS = "s0" + str(svalue)
+    print(fullS)
+    for rrfile in os.listdir('/home/users/ellenrichards/binfordlab/raw_reads/'):
+        if fnmatch.fnmatch(rrfile, "*" + fullS + "*R1*.fastq"):
+            rawread1= rrfile
+        if fnmatch.fnmatch(rrfile, "*" + fullS + "*R2*.fastq"):
+            rawread2= rrfile
+
+    alignstar= f'STAR --runMode alignReads --runThreadN 15 --genomeDir "{genomeDir}"  --readFilesIn /home/users/ellenrichards/binfordlab/raw_reads/"{rawread1}"  /home/users/ellenrichards/binfordlab/raw_reads/"{rawread2}" --outFileNamePrefix "{outfilenameprefix}" --outSAMtype BAM SortedByCoordinate --limitBAMsortRAM 40000000000'
+
+    return alignstar
+
+
+
+if __name__ == "__main__":
     for filename in open(f"{directory}/filenames.txt"):
         run_single_transcript(filename) 

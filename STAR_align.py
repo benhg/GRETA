@@ -20,6 +20,6 @@ def star_align(directory, mvalue, svalue, genomeDir):
     alignstar= f'STAR --runMode alignReads --runThreadN 15 --genomeDir "{genomeDir}"  --readFilesIn /home/users/ellenrichards/binfordlab/raw_reads/"{rawread1}"  /home/users/ellenrichards/binfordlab/raw_reads/"{rawread2}" --outFileNamePrefix "{outfilenameprefix}" --outSAMtype BAM SortedByCoordinate --limitBAMsortRAM 40000000000'
     alignstar = f"'{alignstar}'"
 
-    align = "SGE_Batch -r align" + svalue + " -c " + alignstar + " -P 15"
+    align = f"SGE_Batch -r {align_svalue} -c  {alignstar} -P 15"
 
     os.system(align)

@@ -1,0 +1,1641 @@
+2020-02-04 14:23:05.055 parsl.dataflow.dflow:83 [DEBUG]  Starting DataFlowKernel with config
+Config(
+    app_cache=True, 
+    checkpoint_files=None, 
+    checkpoint_mode=None, 
+    checkpoint_period=None, 
+    data_management_max_threads=10, 
+    executors=[ThreadPoolExecutor(
+        label='threads', 
+        managed=True, 
+        max_threads=20, 
+        storage_access=None, 
+        thread_name_prefix='', 
+        working_dir=None
+    )], 
+    initialize_logging=True, 
+    lazy_errors=True, 
+    max_idletime=120.0, 
+    monitoring=None, 
+    retries=0, 
+    run_dir='runinfo', 
+    strategy='simple', 
+    usage_tracking=False
+)
+2020-02-04 14:23:05.055 parsl.dataflow.dflow:84 [INFO]  Parsl version: 0.9.0
+2020-02-04 14:23:05.055 parsl.dataflow.usage_tracking.usage:126 [DEBUG]  Tracking status: False
+2020-02-04 14:23:05.055 parsl.dataflow.usage_tracking.usage:127 [DEBUG]  Testing mode   : False
+2020-02-04 14:23:05.056 parsl.dataflow.dflow:110 [INFO]  Run id is: 53d1f718-fe35-48bc-bf77-680ffbd67663
+2020-02-04 14:23:05.127 parsl.dataflow.memoization:52 [INFO]  App caching initialized
+2020-02-04 14:23:05.128 parsl.dataflow.strategy:125 [DEBUG]  Scaling strategy: simple
+2020-02-04 14:23:05.213 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.213 parsl.dataflow.dflow:708 [INFO]  Task 0 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.213 parsl.dataflow.dflow:714 [DEBUG]  Task 0 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd5d086a0 state=pending>>
+2020-02-04 14:23:05.214 parsl.dataflow.dflow:452 [INFO]  Task 0 launched on executor threads
+2020-02-04 14:23:05.214 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.214 parsl.dataflow.dflow:708 [INFO]  Task 1 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.214 parsl.dataflow.dflow:714 [DEBUG]  Task 1 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd5d08908 state=pending>>
+2020-02-04 14:23:05.215 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.216 parsl.dataflow.dflow:452 [INFO]  Task 1 launched on executor threads
+2020-02-04 14:23:05.216 parsl.dataflow.dflow:257 [DEBUG]  Task 0 failed
+2020-02-04 14:23:05.217 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.218 parsl.dataflow.dflow:279 [ERROR]  Task 0 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "all.py", line 60, in run_single_transcript
+    os.makedirs(genomeDir)
+  File "/local/cluster/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/users/ellenrichards/test_run_1/s008_c41703_g1_i1_m8507/gd'
+2020-02-04 14:23:05.218 parsl.dataflow.dflow:257 [DEBUG]  Task 1 failed
+2020-02-04 14:23:05.220 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.220 parsl.dataflow.dflow:279 [ERROR]  Task 1 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "all.py", line 60, in run_single_transcript
+    os.makedirs(genomeDir)
+  File "/local/cluster/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/users/ellenrichards/test_run_1/s008_c56733_g1_i3_m22670/gd'
+2020-02-04 14:23:05.221 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.221 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.221 parsl.dataflow.dflow:708 [INFO]  Task 2 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.221 parsl.dataflow.dflow:714 [DEBUG]  Task 2 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd5d3f240 state=pending>>
+2020-02-04 14:23:05.222 parsl.dataflow.dflow:452 [INFO]  Task 2 launched on executor threads
+2020-02-04 14:23:05.222 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.222 parsl.dataflow.dflow:708 [INFO]  Task 3 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.222 parsl.dataflow.dflow:714 [DEBUG]  Task 3 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44cd0b8 state=pending>>
+2020-02-04 14:23:05.223 parsl.dataflow.dflow:452 [INFO]  Task 3 launched on executor threads
+2020-02-04 14:23:05.223 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.223 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.224 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.224 parsl.dataflow.dflow:708 [INFO]  Task 4 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.225 parsl.dataflow.dflow:257 [DEBUG]  Task 3 failed
+2020-02-04 14:23:05.225 parsl.dataflow.dflow:257 [DEBUG]  Task 2 failed
+2020-02-04 14:23:05.225 parsl.dataflow.dflow:714 [DEBUG]  Task 4 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44cd400 state=pending>>
+2020-02-04 14:23:05.226 parsl.dataflow.dflow:279 [ERROR]  Task 3 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "all.py", line 60, in run_single_transcript
+    os.makedirs(genomeDir)
+  File "/local/cluster/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/users/ellenrichards/test_run_1/s012_c60717_g1_i7_m22710/gd'
+2020-02-04 14:23:05.226 parsl.dataflow.dflow:279 [ERROR]  Task 2 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "all.py", line 60, in run_single_transcript
+    os.makedirs(genomeDir)
+  File "/local/cluster/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/users/ellenrichards/test_run_1/s008_c16972_g1_i1_m2384/gd'
+2020-02-04 14:23:05.226 parsl.dataflow.dflow:452 [INFO]  Task 4 launched on executor threads
+2020-02-04 14:23:05.228 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.228 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.229 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.230 parsl.dataflow.dflow:257 [DEBUG]  Task 4 failed
+2020-02-04 14:23:05.230 parsl.dataflow.dflow:279 [ERROR]  Task 4 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "all.py", line 60, in run_single_transcript
+    os.makedirs(genomeDir)
+  File "/local/cluster/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/users/ellenrichards/test_run_1/s010_c65676_g1_i2_m18249/gd'
+2020-02-04 14:23:05.230 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.230 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.230 parsl.dataflow.dflow:708 [INFO]  Task 5 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.230 parsl.dataflow.dflow:714 [DEBUG]  Task 5 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44cd4e0 state=pending>>
+2020-02-04 14:23:05.231 parsl.dataflow.dflow:452 [INFO]  Task 5 launched on executor threads
+2020-02-04 14:23:05.231 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.231 parsl.dataflow.dflow:708 [INFO]  Task 6 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.231 parsl.dataflow.dflow:714 [DEBUG]  Task 6 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44d84a8 state=pending>>
+2020-02-04 14:23:05.232 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.232 parsl.dataflow.dflow:452 [INFO]  Task 6 launched on executor threads
+2020-02-04 14:23:05.232 parsl.dataflow.dflow:257 [DEBUG]  Task 5 failed
+2020-02-04 14:23:05.233 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.233 parsl.dataflow.dflow:279 [ERROR]  Task 5 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "all.py", line 60, in run_single_transcript
+    os.makedirs(genomeDir)
+  File "/local/cluster/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/users/ellenrichards/test_run_1/s002_c62731_g1_i3_m33207/gd'
+2020-02-04 14:23:05.234 parsl.dataflow.dflow:257 [DEBUG]  Task 6 failed
+2020-02-04 14:23:05.234 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.234 parsl.dataflow.dflow:279 [ERROR]  Task 6 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "all.py", line 60, in run_single_transcript
+    os.makedirs(genomeDir)
+  File "/local/cluster/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/users/ellenrichards/test_run_1/s012_c60717_g1_i8_m22711/gd'
+2020-02-04 14:23:05.235 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.235 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.235 parsl.dataflow.dflow:708 [INFO]  Task 7 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.235 parsl.dataflow.dflow:714 [DEBUG]  Task 7 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44e10f0 state=pending>>
+2020-02-04 14:23:05.236 parsl.dataflow.dflow:452 [INFO]  Task 7 launched on executor threads
+2020-02-04 14:23:05.237 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.237 parsl.dataflow.dflow:257 [DEBUG]  Task 7 failed
+2020-02-04 14:23:05.237 parsl.dataflow.dflow:279 [ERROR]  Task 7 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "all.py", line 60, in run_single_transcript
+    os.makedirs(genomeDir)
+  File "/local/cluster/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/users/ellenrichards/test_run_1/s002_c47754_g1_i1_m9492/gd'
+2020-02-04 14:23:05.237 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.237 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.237 parsl.dataflow.dflow:708 [INFO]  Task 8 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.237 parsl.dataflow.dflow:714 [DEBUG]  Task 8 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44e1860 state=pending>>
+2020-02-04 14:23:05.238 parsl.dataflow.dflow:452 [INFO]  Task 8 launched on executor threads
+2020-02-04 14:23:05.239 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.239 parsl.dataflow.dflow:257 [DEBUG]  Task 8 failed
+2020-02-04 14:23:05.239 parsl.dataflow.dflow:279 [ERROR]  Task 8 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "all.py", line 60, in run_single_transcript
+    os.makedirs(genomeDir)
+  File "/local/cluster/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/users/ellenrichards/test_run_1/s008_c33195_g1_i1_m5438/gd'
+2020-02-04 14:23:05.239 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.239 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.239 parsl.dataflow.dflow:708 [INFO]  Task 9 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.239 parsl.dataflow.dflow:714 [DEBUG]  Task 9 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44e1fd0 state=pending>>
+2020-02-04 14:23:05.240 parsl.dataflow.dflow:452 [INFO]  Task 9 launched on executor threads
+2020-02-04 14:23:05.240 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.240 parsl.dataflow.dflow:708 [INFO]  Task 10 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.241 parsl.dataflow.dflow:714 [DEBUG]  Task 10 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44ed2e8 state=pending>>
+2020-02-04 14:23:05.241 parsl.dataflow.dflow:452 [INFO]  Task 10 launched on executor threads
+2020-02-04 14:23:05.241 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.242 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.242 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.243 parsl.dataflow.dflow:708 [INFO]  Task 11 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.243 parsl.dataflow.dflow:257 [DEBUG]  Task 9 failed
+2020-02-04 14:23:05.243 parsl.dataflow.dflow:257 [DEBUG]  Task 10 failed
+2020-02-04 14:23:05.244 parsl.dataflow.dflow:714 [DEBUG]  Task 11 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44ed588 state=pending>>
+2020-02-04 14:23:05.244 parsl.dataflow.dflow:279 [ERROR]  Task 9 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "all.py", line 60, in run_single_transcript
+    os.makedirs(genomeDir)
+  File "/local/cluster/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/users/ellenrichards/test_run_1/s008_c90190_g1_i1_m38949/gd'
+2020-02-04 14:23:05.244 parsl.dataflow.dflow:279 [ERROR]  Task 10 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "all.py", line 60, in run_single_transcript
+    os.makedirs(genomeDir)
+  File "/local/cluster/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/users/ellenrichards/test_run_1/s008_c32952_g1_i2_m5368/gd'
+2020-02-04 14:23:05.245 parsl.dataflow.dflow:452 [INFO]  Task 11 launched on executor threads
+2020-02-04 14:23:05.246 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.246 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.246 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.247 parsl.dataflow.dflow:257 [DEBUG]  Task 11 failed
+2020-02-04 14:23:05.247 parsl.dataflow.dflow:279 [ERROR]  Task 11 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "all.py", line 60, in run_single_transcript
+    os.makedirs(genomeDir)
+  File "/local/cluster/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/users/ellenrichards/test_run_1/s010_c65676_g1_i4_m18250Periegops/gd'
+2020-02-04 14:23:05.248 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.248 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.248 parsl.dataflow.dflow:708 [INFO]  Task 12 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.248 parsl.dataflow.dflow:714 [DEBUG]  Task 12 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44edd30 state=pending>>
+2020-02-04 14:23:05.248 parsl.dataflow.dflow:452 [INFO]  Task 12 launched on executor threads
+2020-02-04 14:23:05.248 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.249 parsl.dataflow.dflow:708 [INFO]  Task 13 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.249 parsl.dataflow.dflow:714 [DEBUG]  Task 13 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44f72e8 state=pending>>
+2020-02-04 14:23:05.249 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.250 parsl.dataflow.dflow:257 [DEBUG]  Task 12 failed
+2020-02-04 14:23:05.250 parsl.dataflow.dflow:279 [ERROR]  Task 12 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "all.py", line 60, in run_single_transcript
+    os.makedirs(genomeDir)
+  File "/local/cluster/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/users/ellenrichards/test_run_1/s008_c57542_g1_i2_m24298/gd'
+2020-02-04 14:23:05.250 parsl.dataflow.dflow:452 [INFO]  Task 13 launched on executor threads
+2020-02-04 14:23:05.251 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.251 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.252 parsl.dataflow.dflow:257 [DEBUG]  Task 13 failed
+2020-02-04 14:23:05.252 parsl.dataflow.dflow:279 [ERROR]  Task 13 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "all.py", line 60, in run_single_transcript
+    os.makedirs(genomeDir)
+  File "/local/cluster/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/users/ellenrichards/test_run_1/s010_c29963_g1_i1_m4044/gd'
+2020-02-04 14:23:05.253 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.253 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.253 parsl.dataflow.dflow:708 [INFO]  Task 14 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.253 parsl.dataflow.dflow:714 [DEBUG]  Task 14 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44f7ef0 state=pending>>
+2020-02-04 14:23:05.254 parsl.dataflow.dflow:452 [INFO]  Task 14 launched on executor threads
+2020-02-04 14:23:05.254 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.254 parsl.dataflow.dflow:257 [DEBUG]  Task 14 failed
+2020-02-04 14:23:05.254 parsl.dataflow.dflow:279 [ERROR]  Task 14 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "all.py", line 60, in run_single_transcript
+    os.makedirs(genomeDir)
+  File "/local/cluster/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/users/ellenrichards/test_run_1/s004_c49681_g1_i4_m9094/gd'
+2020-02-04 14:23:05.255 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.255 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.255 parsl.dataflow.dflow:708 [INFO]  Task 15 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.255 parsl.dataflow.dflow:714 [DEBUG]  Task 15 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4481550 state=pending>>
+2020-02-04 14:23:05.255 parsl.dataflow.dflow:452 [INFO]  Task 15 launched on executor threads
+2020-02-04 14:23:05.255 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.256 parsl.dataflow.dflow:708 [INFO]  Task 16 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.256 parsl.dataflow.dflow:714 [DEBUG]  Task 16 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4481710 state=pending>>
+2020-02-04 14:23:05.256 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.258 parsl.dataflow.dflow:257 [DEBUG]  Task 15 failed
+2020-02-04 14:23:05.258 parsl.dataflow.dflow:279 [ERROR]  Task 15 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "all.py", line 60, in run_single_transcript
+    os.makedirs(genomeDir)
+  File "/local/cluster/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/users/ellenrichards/test_run_1/s019_c69502_g1_i5_m15585/gd'
+2020-02-04 14:23:05.258 parsl.dataflow.dflow:452 [INFO]  Task 16 launched on executor threads
+2020-02-04 14:23:05.259 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.259 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.259 parsl.dataflow.dflow:257 [DEBUG]  Task 16 failed
+2020-02-04 14:23:05.260 parsl.dataflow.dflow:279 [ERROR]  Task 16 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "all.py", line 60, in run_single_transcript
+    os.makedirs(genomeDir)
+  File "/local/cluster/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/users/ellenrichards/test_run_1/s008_c59224_g3_i1_m29252/gd'
+2020-02-04 14:23:05.260 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.260 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.260 parsl.dataflow.dflow:708 [INFO]  Task 17 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.260 parsl.dataflow.dflow:714 [DEBUG]  Task 17 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4481ef0 state=pending>>
+2020-02-04 14:23:05.260 parsl.dataflow.dflow:452 [INFO]  Task 17 launched on executor threads
+2020-02-04 14:23:05.261 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.261 parsl.dataflow.dflow:708 [INFO]  Task 18 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.261 parsl.dataflow.dflow:714 [DEBUG]  Task 18 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd448a208 state=pending>>
+2020-02-04 14:23:05.262 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.262 parsl.dataflow.dflow:452 [INFO]  Task 18 launched on executor threads
+2020-02-04 14:23:05.262 parsl.dataflow.dflow:257 [DEBUG]  Task 17 failed
+2020-02-04 14:23:05.263 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.263 parsl.dataflow.dflow:279 [ERROR]  Task 17 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "all.py", line 60, in run_single_transcript
+    os.makedirs(genomeDir)
+  File "/local/cluster/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/users/ellenrichards/test_run_1/s008_c56952_g1_i2_m23101/gd'
+2020-02-04 14:23:05.264 parsl.dataflow.dflow:257 [DEBUG]  Task 18 failed
+2020-02-04 14:23:05.264 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.264 parsl.dataflow.dflow:279 [ERROR]  Task 18 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "all.py", line 60, in run_single_transcript
+    os.makedirs(genomeDir)
+  File "/local/cluster/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/users/ellenrichards/test_run_1/s008_c90193_g1_i1_m38951/gd'
+2020-02-04 14:23:05.265 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.265 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.265 parsl.dataflow.dflow:708 [INFO]  Task 19 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.265 parsl.dataflow.dflow:714 [DEBUG]  Task 19 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd448ae10 state=pending>>
+2020-02-04 14:23:05.266 parsl.dataflow.dflow:452 [INFO]  Task 19 launched on executor threads
+2020-02-04 14:23:05.266 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.266 parsl.dataflow.dflow:708 [INFO]  Task 20 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.266 parsl.dataflow.dflow:714 [DEBUG]  Task 20 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4496128 state=pending>>
+2020-02-04 14:23:05.266 parsl.dataflow.dflow:452 [INFO]  Task 20 launched on executor threads
+2020-02-04 14:23:05.267 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.267 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.268 parsl.dataflow.dflow:257 [DEBUG]  Task 19 failed
+2020-02-04 14:23:05.268 parsl.dataflow.dflow:708 [INFO]  Task 21 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.268 parsl.dataflow.dflow:279 [ERROR]  Task 19 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "all.py", line 60, in run_single_transcript
+    os.makedirs(genomeDir)
+  File "/local/cluster/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/users/ellenrichards/test_run_1/s012_c56483_g1_i3_m15877/gd'
+2020-02-04 14:23:05.268 parsl.dataflow.dflow:714 [DEBUG]  Task 21 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4496358 state=pending>>
+2020-02-04 14:23:05.269 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'FileExistsError'>
+2020-02-04 14:23:05.269 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.269 parsl.dataflow.dflow:452 [INFO]  Task 21 launched on executor threads
+2020-02-04 14:23:05.270 parsl.dataflow.dflow:708 [INFO]  Task 22 submitted for App star_index, waiting on tasks []
+2020-02-04 14:23:05.270 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.270 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.270 parsl.dataflow.dflow:714 [DEBUG]  Task 22 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4496780 state=pending>>
+2020-02-04 14:23:05.271 parsl.dataflow.dflow:708 [INFO]  Task 23 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.271 parsl.dataflow.dflow:708 [INFO]  Task 24 submitted for App star_index, waiting on tasks []
+2020-02-04 14:23:05.271 parsl.dataflow.dflow:452 [INFO]  Task 22 launched on executor threads
+2020-02-04 14:23:05.271 parsl.dataflow.dflow:714 [DEBUG]  Task 23 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44968d0 state=pending>>
+2020-02-04 14:23:05.272 parsl.dataflow.dflow:714 [DEBUG]  Task 24 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4496160 state=pending>>
+2020-02-04 14:23:05.272 parsl.app.bash.1580844185.2717056:54 [DEBUG]  Executable: 'STAR --runThreadN 1 --runMode genomeGenerate --genomeDir  "/home/users/ellenrichards/test_run_1/s008_c46694_g2_i1_m11196/gd" --genomeFastaFiles "/home/users/ellenrichards/test_run_1/s008_c46694_g2_i1_m11196.fasta" --genomeSAindexNbases 2'
+2020-02-04 14:23:05.274 parsl.dataflow.dflow:452 [INFO]  Task 23 launched on executor threads
+2020-02-04 14:23:05.274 parsl.dataflow.dflow:452 [INFO]  Task 24 launched on executor threads
+2020-02-04 14:23:05.280 parsl.app.bash.1580844185.2751026:54 [DEBUG]  Executable: 'STAR --runThreadN 1 --runMode genomeGenerate --genomeDir  "/home/users/ellenrichards/test_run_1/s021_c80513_g1_i1_m18081/gd" --genomeFastaFiles "/home/users/ellenrichards/test_run_1/s021_c80513_g1_i1_m18081.fasta" --genomeSAindexNbases 2'
+2020-02-04 14:23:05.281 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.282 parsl.dataflow.dflow:708 [INFO]  Task 25 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.286 parsl.dataflow.dflow:714 [DEBUG]  Task 25 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4496da0 state=pending>>
+2020-02-04 14:23:05.287 parsl.dataflow.dflow:452 [INFO]  Task 25 launched on executor threads
+2020-02-04 14:23:05.287 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.287 parsl.dataflow.dflow:708 [INFO]  Task 26 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.288 parsl.dataflow.dflow:714 [DEBUG]  Task 26 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44a3278 state=pending>>
+2020-02-04 14:23:05.288 parsl.dataflow.dflow:452 [INFO]  Task 26 launched on executor threads
+2020-02-04 14:23:05.288 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.288 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.289 parsl.dataflow.dflow:708 [INFO]  Task 27 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.290 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.290 parsl.dataflow.dflow:708 [INFO]  Task 28 submitted for App star_index, waiting on tasks []
+2020-02-04 14:23:05.290 parsl.dataflow.dflow:714 [DEBUG]  Task 27 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44a3400 state=pending>>
+2020-02-04 14:23:05.291 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.291 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.291 parsl.dataflow.dflow:257 [DEBUG]  Task 22 failed
+2020-02-04 14:23:05.292 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.292 parsl.dataflow.dflow:714 [DEBUG]  Task 28 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4496ac8 state=pending>>
+2020-02-04 14:23:05.293 parsl.dataflow.dflow:452 [INFO]  Task 27 launched on executor threads
+2020-02-04 14:23:05.293 parsl.dataflow.dflow:708 [INFO]  Task 29 submitted for App star_index, waiting on tasks []
+2020-02-04 14:23:05.293 parsl.dataflow.dflow:708 [INFO]  Task 30 submitted for App star_index, waiting on tasks []
+2020-02-04 14:23:05.293 parsl.dataflow.dflow:279 [ERROR]  Task 22 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/bash.py", line 101, in remote_side_bash_executor
+    raise pe.AppFailure("[{}] App failed with exit code: {}".format(func_name, proc.returncode), proc.returncode)
+parsl.app.errors.AppFailure: ('[star_index] App failed with exit code: 127', 127)
+2020-02-04 14:23:05.294 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.294 parsl.dataflow.dflow:257 [DEBUG]  Task 24 failed
+2020-02-04 14:23:05.294 parsl.dataflow.dflow:452 [INFO]  Task 28 launched on executor threads
+2020-02-04 14:23:05.296 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.296 parsl.dataflow.dflow:714 [DEBUG]  Task 29 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4496f28 state=pending>>
+2020-02-04 14:23:05.296 parsl.app.bash.1580844185.2950802:54 [DEBUG]  Executable: 'STAR --runThreadN 1 --runMode genomeGenerate --genomeDir  "/home/users/ellenrichards/test_run_1/s008_c33157_g1_i1_m5420/gd" --genomeFastaFiles "/home/users/ellenrichards/test_run_1/s008_c33157_g1_i1_m5420.fasta" --genomeSAindexNbases 2'
+2020-02-04 14:23:05.297 parsl.dataflow.dflow:714 [DEBUG]  Task 30 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44a3908 state=pending>>
+2020-02-04 14:23:05.297 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.298 parsl.dataflow.dflow:708 [INFO]  Task 31 submitted for App star_index, waiting on tasks []
+2020-02-04 14:23:05.298 parsl.dataflow.dflow:279 [ERROR]  Task 24 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/bash.py", line 101, in remote_side_bash_executor
+    raise pe.AppFailure("[{}] App failed with exit code: {}".format(func_name, proc.returncode), proc.returncode)
+parsl.app.errors.AppFailure: ('[star_index] App failed with exit code: 127', 127)
+2020-02-04 14:23:05.298 parsl.dataflow.dflow:708 [INFO]  Task 32 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.299 parsl.dataflow.dflow:452 [INFO]  Task 29 launched on executor threads
+2020-02-04 14:23:05.304 parsl.dataflow.dflow:452 [INFO]  Task 30 launched on executor threads
+2020-02-04 14:23:05.305 parsl.app.bash.1580844185.29945:54 [DEBUG]  Executable: 'STAR --runThreadN 1 --runMode genomeGenerate --genomeDir  "/home/users/ellenrichards/test_run_1/s008_c40037_g1_i2_m7741/gd" --genomeFastaFiles "/home/users/ellenrichards/test_run_1/s008_c40037_g1_i2_m7741.fasta" --genomeSAindexNbases 2'
+2020-02-04 14:23:05.307 parsl.dataflow.dflow:714 [DEBUG]  Task 31 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44ac080 state=pending>>
+2020-02-04 14:23:05.307 parsl.app.bash.1580844185.3058767:54 [DEBUG]  Executable: 'STAR --runThreadN 1 --runMode genomeGenerate --genomeDir  "/home/users/ellenrichards/test_run_1/s008_c9794_g1_i1_m1373/gd" --genomeFastaFiles "/home/users/ellenrichards/test_run_1/s008_c9794_g1_i1_m1373.fasta" --genomeSAindexNbases 2'
+2020-02-04 14:23:05.308 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.308 parsl.dataflow.dflow:714 [DEBUG]  Task 32 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44a3eb8 state=pending>>
+2020-02-04 14:23:05.314 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.315 parsl.dataflow.dflow:452 [INFO]  Task 31 launched on executor threads
+2020-02-04 14:23:05.322 parsl.dataflow.dflow:452 [INFO]  Task 32 launched on executor threads
+2020-02-04 14:23:05.321 parsl.app.bash.1580844185.3159838:54 [DEBUG]  Executable: 'STAR --runThreadN 1 --runMode genomeGenerate --genomeDir  "/home/users/ellenrichards/test_run_1/s022_c48655_g1_i1_m7615/gd" --genomeFastaFiles "/home/users/ellenrichards/test_run_1/s022_c48655_g1_i1_m7615.fasta" --genomeSAindexNbases 2'
+2020-02-04 14:23:05.323 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.324 parsl.dataflow.dflow:257 [DEBUG]  Task 28 failed
+2020-02-04 14:23:05.325 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.325 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.325 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.330 parsl.dataflow.dflow:257 [DEBUG]  Task 29 failed
+2020-02-04 14:23:05.331 parsl.dataflow.dflow:279 [ERROR]  Task 28 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/bash.py", line 101, in remote_side_bash_executor
+    raise pe.AppFailure("[{}] App failed with exit code: {}".format(func_name, proc.returncode), proc.returncode)
+parsl.app.errors.AppFailure: ('[star_index] App failed with exit code: 127', 127)
+2020-02-04 14:23:05.332 parsl.dataflow.dflow:257 [DEBUG]  Task 30 failed
+2020-02-04 14:23:05.332 parsl.dataflow.dflow:708 [INFO]  Task 33 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.332 parsl.dataflow.dflow:708 [INFO]  Task 34 submitted for App star_index, waiting on tasks []
+2020-02-04 14:23:05.332 parsl.dataflow.dflow:279 [ERROR]  Task 29 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/bash.py", line 101, in remote_side_bash_executor
+    raise pe.AppFailure("[{}] App failed with exit code: {}".format(func_name, proc.returncode), proc.returncode)
+parsl.app.errors.AppFailure: ('[star_index] App failed with exit code: 127', 127)
+2020-02-04 14:23:05.333 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.333 parsl.dataflow.dflow:279 [ERROR]  Task 30 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/bash.py", line 101, in remote_side_bash_executor
+    raise pe.AppFailure("[{}] App failed with exit code: {}".format(func_name, proc.returncode), proc.returncode)
+parsl.app.errors.AppFailure: ('[star_index] App failed with exit code: 127', 127)
+2020-02-04 14:23:05.334 parsl.dataflow.dflow:714 [DEBUG]  Task 33 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44b00f0 state=pending>>
+2020-02-04 14:23:05.334 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.335 parsl.dataflow.dflow:714 [DEBUG]  Task 34 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44ace80 state=pending>>
+2020-02-04 14:23:05.335 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.336 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.336 parsl.dataflow.dflow:452 [INFO]  Task 33 launched on executor threads
+2020-02-04 14:23:05.337 parsl.dataflow.dflow:257 [DEBUG]  Task 31 failed
+2020-02-04 14:23:05.337 parsl.dataflow.dflow:452 [INFO]  Task 34 launched on executor threads
+2020-02-04 14:23:05.339 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.340 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.340 parsl.app.bash.1580844185.3380535:54 [DEBUG]  Executable: 'STAR --runThreadN 1 --runMode genomeGenerate --genomeDir  "/home/users/ellenrichards/test_run_1/s006_c48208_g2_i4_m27124/gd" --genomeFastaFiles "/home/users/ellenrichards/test_run_1/s006_c48208_g2_i4_m27124.fasta" --genomeSAindexNbases 2'
+2020-02-04 14:23:05.340 parsl.dataflow.dflow:279 [ERROR]  Task 31 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/bash.py", line 101, in remote_side_bash_executor
+    raise pe.AppFailure("[{}] App failed with exit code: {}".format(func_name, proc.returncode), proc.returncode)
+parsl.app.errors.AppFailure: ('[star_index] App failed with exit code: 127', 127)
+2020-02-04 14:23:05.340 parsl.dataflow.dflow:708 [INFO]  Task 35 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.341 parsl.dataflow.dflow:708 [INFO]  Task 36 submitted for App star_index, waiting on tasks []
+2020-02-04 14:23:05.346 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.346 parsl.dataflow.dflow:714 [DEBUG]  Task 35 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44b0940 state=pending>>
+2020-02-04 14:23:05.347 parsl.dataflow.dflow:714 [DEBUG]  Task 36 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44bf0b8 state=pending>>
+2020-02-04 14:23:05.347 parsl.dataflow.dflow:452 [INFO]  Task 35 launched on executor threads
+2020-02-04 14:23:05.348 parsl.dataflow.dflow:452 [INFO]  Task 36 launched on executor threads
+2020-02-04 14:23:05.349 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.350 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.350 parsl.app.bash.1580844185.3486004:54 [DEBUG]  Executable: 'STAR --runThreadN 1 --runMode genomeGenerate --genomeDir  "/home/users/ellenrichards/test_run_1/s022_c63953_g1_i7_m23363/gd" --genomeFastaFiles "/home/users/ellenrichards/test_run_1/s022_c63953_g1_i7_m23363.fasta" --genomeSAindexNbases 2'
+2020-02-04 14:23:05.351 parsl.dataflow.dflow:708 [INFO]  Task 37 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.351 parsl.dataflow.dflow:257 [DEBUG]  Task 34 failed
+2020-02-04 14:23:05.355 parsl.dataflow.dflow:714 [DEBUG]  Task 37 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44acac8 state=pending>>
+2020-02-04 14:23:05.356 parsl.dataflow.dflow:279 [ERROR]  Task 34 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/bash.py", line 101, in remote_side_bash_executor
+    raise pe.AppFailure("[{}] App failed with exit code: {}".format(func_name, proc.returncode), proc.returncode)
+parsl.app.errors.AppFailure: ('[star_index] App failed with exit code: 127', 127)
+2020-02-04 14:23:05.356 parsl.dataflow.dflow:452 [INFO]  Task 37 launched on executor threads
+2020-02-04 14:23:05.358 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.358 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.358 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.359 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.359 parsl.dataflow.dflow:708 [INFO]  Task 38 submitted for App star_index, waiting on tasks []
+2020-02-04 14:23:05.360 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.360 parsl.dataflow.dflow:708 [INFO]  Task 39 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.361 parsl.dataflow.dflow:708 [INFO]  Task 40 submitted for App star_index, waiting on tasks []
+2020-02-04 14:23:05.361 parsl.dataflow.dflow:714 [DEBUG]  Task 38 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44bf978 state=pending>>
+2020-02-04 14:23:05.361 parsl.dataflow.dflow:257 [DEBUG]  Task 36 failed
+2020-02-04 14:23:05.361 parsl.dataflow.dflow:714 [DEBUG]  Task 39 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44bfa20 state=pending>>
+2020-02-04 14:23:05.362 parsl.dataflow.dflow:714 [DEBUG]  Task 40 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44bfc50 state=pending>>
+2020-02-04 14:23:05.362 parsl.dataflow.dflow:452 [INFO]  Task 38 launched on executor threads
+2020-02-04 14:23:05.363 parsl.dataflow.dflow:279 [ERROR]  Task 36 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/bash.py", line 101, in remote_side_bash_executor
+    raise pe.AppFailure("[{}] App failed with exit code: {}".format(func_name, proc.returncode), proc.returncode)
+parsl.app.errors.AppFailure: ('[star_index] App failed with exit code: 127', 127)
+2020-02-04 14:23:05.363 parsl.dataflow.dflow:452 [INFO]  Task 39 launched on executor threads
+2020-02-04 14:23:05.363 parsl.dataflow.dflow:452 [INFO]  Task 40 launched on executor threads
+2020-02-04 14:23:05.364 parsl.app.bash.1580844185.3626027:54 [DEBUG]  Executable: 'STAR --runThreadN 1 --runMode genomeGenerate --genomeDir  "/home/users/ellenrichards/test_run_1/s006_c48208_g2_i5_m27125/gd" --genomeFastaFiles "/home/users/ellenrichards/test_run_1/s006_c48208_g2_i5_m27125.fasta" --genomeSAindexNbases 2'
+2020-02-04 14:23:05.365 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.365 parsl.app.bash.1580844185.364639:54 [DEBUG]  Executable: 'STAR --runThreadN 1 --runMode genomeGenerate --genomeDir  "/home/users/ellenrichards/test_run_1/s003_c63829_g1_i4_m28514/gd" --genomeFastaFiles "/home/users/ellenrichards/test_run_1/s003_c63829_g1_i4_m28514.fasta" --genomeSAindexNbases 2'
+2020-02-04 14:23:05.366 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.366 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.374 parsl.dataflow.dflow:708 [INFO]  Task 41 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.375 parsl.dataflow.dflow:708 [INFO]  Task 42 submitted for App star_index, waiting on tasks []
+2020-02-04 14:23:05.376 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.377 parsl.dataflow.dflow:714 [DEBUG]  Task 41 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd444a0b8 state=pending>>
+2020-02-04 14:23:05.377 parsl.dataflow.dflow:714 [DEBUG]  Task 42 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44bff60 state=pending>>
+2020-02-04 14:23:05.377 parsl.dataflow.dflow:257 [DEBUG]  Task 38 failed
+2020-02-04 14:23:05.378 parsl.dataflow.dflow:452 [INFO]  Task 41 launched on executor threads
+2020-02-04 14:23:05.378 parsl.dataflow.dflow:452 [INFO]  Task 42 launched on executor threads
+2020-02-04 14:23:05.380 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.380 parsl.dataflow.dflow:279 [ERROR]  Task 38 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/bash.py", line 101, in remote_side_bash_executor
+    raise pe.AppFailure("[{}] App failed with exit code: {}".format(func_name, proc.returncode), proc.returncode)
+parsl.app.errors.AppFailure: ('[star_index] App failed with exit code: 127', 127)
+2020-02-04 14:23:05.380 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.381 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.381 parsl.dataflow.dflow:257 [DEBUG]  Task 40 failed
+2020-02-04 14:23:05.381 parsl.app.bash.1580844185.3787818:54 [DEBUG]  Executable: 'STAR --runThreadN 1 --runMode genomeGenerate --genomeDir  "/home/users/ellenrichards/test_run_1/s018_c51188_g2_i2_m28601/gd" --genomeFastaFiles "/home/users/ellenrichards/test_run_1/s018_c51188_g2_i2_m28601.fasta" --genomeSAindexNbases 2'
+2020-02-04 14:23:05.382 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.382 parsl.dataflow.dflow:708 [INFO]  Task 43 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.383 parsl.dataflow.dflow:708 [INFO]  Task 44 submitted for App star_index, waiting on tasks []
+2020-02-04 14:23:05.383 parsl.dataflow.dflow:279 [ERROR]  Task 40 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/bash.py", line 101, in remote_side_bash_executor
+    raise pe.AppFailure("[{}] App failed with exit code: {}".format(func_name, proc.returncode), proc.returncode)
+parsl.app.errors.AppFailure: ('[star_index] App failed with exit code: 127', 127)
+2020-02-04 14:23:05.388 parsl.dataflow.dflow:714 [DEBUG]  Task 43 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd444a978 state=pending>>
+2020-02-04 14:23:05.389 parsl.dataflow.dflow:714 [DEBUG]  Task 44 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4450080 state=pending>>
+2020-02-04 14:23:05.390 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.390 parsl.dataflow.dflow:452 [INFO]  Task 43 launched on executor threads
+2020-02-04 14:23:05.391 parsl.dataflow.dflow:452 [INFO]  Task 44 launched on executor threads
+2020-02-04 14:23:05.393 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.393 parsl.app.bash.1580844185.391339:54 [DEBUG]  Executable: 'STAR --runThreadN 1 --runMode genomeGenerate --genomeDir  "/home/users/ellenrichards/test_run_1/s021_c87627_g1_i5_m30961/gd" --genomeFastaFiles "/home/users/ellenrichards/test_run_1/s021_c87627_g1_i5_m30961.fasta" --genomeSAindexNbases 2'
+2020-02-04 14:23:05.393 parsl.dataflow.dflow:708 [INFO]  Task 45 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.393 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.394 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.395 parsl.dataflow.dflow:714 [DEBUG]  Task 45 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4450278 state=pending>>
+2020-02-04 14:23:05.399 parsl.dataflow.dflow:708 [INFO]  Task 46 submitted for App star_index, waiting on tasks []
+2020-02-04 14:23:05.401 parsl.dataflow.dflow:257 [DEBUG]  Task 42 failed
+2020-02-04 14:23:05.401 parsl.dataflow.dflow:452 [INFO]  Task 45 launched on executor threads
+2020-02-04 14:23:05.402 parsl.dataflow.dflow:714 [DEBUG]  Task 46 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4450780 state=pending>>
+2020-02-04 14:23:05.402 parsl.dataflow.dflow:279 [ERROR]  Task 42 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/bash.py", line 101, in remote_side_bash_executor
+    raise pe.AppFailure("[{}] App failed with exit code: {}".format(func_name, proc.returncode), proc.returncode)
+parsl.app.errors.AppFailure: ('[star_index] App failed with exit code: 127', 127)
+2020-02-04 14:23:05.402 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.403 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.403 parsl.dataflow.dflow:452 [INFO]  Task 46 launched on executor threads
+2020-02-04 14:23:05.405 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.405 parsl.app.bash.1580844185.4038637:54 [DEBUG]  Executable: 'STAR --runThreadN 1 --runMode genomeGenerate --genomeDir  "/home/users/ellenrichards/test_run_1/s014_c90267_g1_i6_m30845/gd" --genomeFastaFiles "/home/users/ellenrichards/test_run_1/s014_c90267_g1_i6_m30845.fasta" --genomeSAindexNbases 2'
+2020-02-04 14:23:05.405 parsl.dataflow.dflow:708 [INFO]  Task 47 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.406 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.406 parsl.dataflow.dflow:708 [INFO]  Task 48 submitted for App star_index, waiting on tasks []
+2020-02-04 14:23:05.410 parsl.dataflow.dflow:714 [DEBUG]  Task 47 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4450b00 state=pending>>
+2020-02-04 14:23:05.412 parsl.dataflow.dflow:257 [DEBUG]  Task 44 failed
+2020-02-04 14:23:05.412 parsl.dataflow.dflow:714 [DEBUG]  Task 48 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4450c88 state=pending>>
+2020-02-04 14:23:05.413 parsl.dataflow.dflow:452 [INFO]  Task 47 launched on executor threads
+2020-02-04 14:23:05.413 parsl.dataflow.dflow:279 [ERROR]  Task 44 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/bash.py", line 101, in remote_side_bash_executor
+    raise pe.AppFailure("[{}] App failed with exit code: {}".format(func_name, proc.returncode), proc.returncode)
+parsl.app.errors.AppFailure: ('[star_index] App failed with exit code: 127', 127)
+2020-02-04 14:23:05.414 parsl.dataflow.dflow:452 [INFO]  Task 48 launched on executor threads
+2020-02-04 14:23:05.415 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.416 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.417 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.417 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.417 parsl.app.bash.1580844185.4142132:54 [DEBUG]  Executable: 'STAR --runThreadN 1 --runMode genomeGenerate --genomeDir  "/home/users/ellenrichards/test_run_1/s005_c57098_g2_i3_m26644/gd" --genomeFastaFiles "/home/users/ellenrichards/test_run_1/s005_c57098_g2_i3_m26644.fasta" --genomeSAindexNbases 2'
+2020-02-04 14:23:05.418 parsl.dataflow.dflow:708 [INFO]  Task 49 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.418 parsl.dataflow.dflow:708 [INFO]  Task 50 submitted for App star_index, waiting on tasks []
+2020-02-04 14:23:05.418 parsl.dataflow.dflow:257 [DEBUG]  Task 46 failed
+2020-02-04 14:23:05.423 parsl.dataflow.dflow:714 [DEBUG]  Task 49 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4450a90 state=pending>>
+2020-02-04 14:23:05.423 parsl.dataflow.dflow:714 [DEBUG]  Task 50 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4459160 state=pending>>
+2020-02-04 14:23:05.424 parsl.dataflow.dflow:279 [ERROR]  Task 46 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/bash.py", line 101, in remote_side_bash_executor
+    raise pe.AppFailure("[{}] App failed with exit code: {}".format(func_name, proc.returncode), proc.returncode)
+parsl.app.errors.AppFailure: ('[star_index] App failed with exit code: 127', 127)
+2020-02-04 14:23:05.424 parsl.dataflow.dflow:452 [INFO]  Task 49 launched on executor threads
+2020-02-04 14:23:05.425 parsl.dataflow.dflow:452 [INFO]  Task 50 launched on executor threads
+2020-02-04 14:23:05.426 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.427 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.427 parsl.app.bash.1580844185.425784:54 [DEBUG]  Executable: 'STAR --runThreadN 1 --runMode genomeGenerate --genomeDir  "/home/users/ellenrichards/test_run_1/s008_c58516_g2_i1_m26811/gd" --genomeFastaFiles "/home/users/ellenrichards/test_run_1/s008_c58516_g2_i1_m26811.fasta" --genomeSAindexNbases 2'
+2020-02-04 14:23:05.428 parsl.dataflow.dflow:708 [INFO]  Task 51 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.428 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.429 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.430 parsl.dataflow.dflow:714 [DEBUG]  Task 51 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4459a90 state=pending>>
+2020-02-04 14:23:05.434 parsl.dataflow.dflow:708 [INFO]  Task 52 submitted for App star_index, waiting on tasks []
+2020-02-04 14:23:05.435 parsl.dataflow.dflow:257 [DEBUG]  Task 48 failed
+2020-02-04 14:23:05.436 parsl.dataflow.dflow:452 [INFO]  Task 51 launched on executor threads
+2020-02-04 14:23:05.436 parsl.dataflow.dflow:714 [DEBUG]  Task 52 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4459f28 state=pending>>
+2020-02-04 14:23:05.437 parsl.dataflow.dflow:279 [ERROR]  Task 48 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/bash.py", line 101, in remote_side_bash_executor
+    raise pe.AppFailure("[{}] App failed with exit code: {}".format(func_name, proc.returncode), proc.returncode)
+parsl.app.errors.AppFailure: ('[star_index] App failed with exit code: 127', 127)
+2020-02-04 14:23:05.437 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.438 parsl.dataflow.dflow:452 [INFO]  Task 52 launched on executor threads
+2020-02-04 14:23:05.438 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.440 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.441 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.441 parsl.app.bash.1580844185.438674:54 [DEBUG]  Executable: 'STAR --runThreadN 1 --runMode genomeGenerate --genomeDir  "/home/users/ellenrichards/test_run_1/s008_c67964_g1_i1_m37031/gd" --genomeFastaFiles "/home/users/ellenrichards/test_run_1/s008_c67964_g1_i1_m37031.fasta" --genomeSAindexNbases 2'
+2020-02-04 14:23:05.441 parsl.dataflow.dflow:708 [INFO]  Task 53 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.442 parsl.dataflow.dflow:708 [INFO]  Task 54 submitted for App star_index, waiting on tasks []
+2020-02-04 14:23:05.442 parsl.dataflow.dflow:257 [DEBUG]  Task 50 failed
+2020-02-04 14:23:05.446 parsl.dataflow.dflow:714 [DEBUG]  Task 53 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4463320 state=pending>>
+2020-02-04 14:23:05.447 parsl.dataflow.dflow:714 [DEBUG]  Task 54 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4463198 state=pending>>
+2020-02-04 14:23:05.447 parsl.dataflow.dflow:279 [ERROR]  Task 50 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/bash.py", line 101, in remote_side_bash_executor
+    raise pe.AppFailure("[{}] App failed with exit code: {}".format(func_name, proc.returncode), proc.returncode)
+parsl.app.errors.AppFailure: ('[star_index] App failed with exit code: 127', 127)
+2020-02-04 14:23:05.448 parsl.dataflow.dflow:452 [INFO]  Task 53 launched on executor threads
+2020-02-04 14:23:05.448 parsl.dataflow.dflow:452 [INFO]  Task 54 launched on executor threads
+2020-02-04 14:23:05.449 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.450 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.450 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.452 parsl.dataflow.dflow:708 [INFO]  Task 55 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.453 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.453 parsl.app.bash.1580844185.4513776:54 [DEBUG]  Executable: 'STAR --runThreadN 1 --runMode genomeGenerate --genomeDir  "/home/users/ellenrichards/test_run_1/s014_c90267_g1_i5_m30844/gd" --genomeFastaFiles "/home/users/ellenrichards/test_run_1/s014_c90267_g1_i5_m30844.fasta" --genomeSAindexNbases 2'
+2020-02-04 14:23:05.454 parsl.dataflow.dflow:708 [INFO]  Task 56 submitted for App star_index, waiting on tasks []
+2020-02-04 14:23:05.454 parsl.dataflow.dflow:714 [DEBUG]  Task 55 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4463c50 state=pending>>
+2020-02-04 14:23:05.454 parsl.dataflow.dflow:257 [DEBUG]  Task 52 failed
+2020-02-04 14:23:05.459 parsl.dataflow.dflow:714 [DEBUG]  Task 56 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4463eb8 state=pending>>
+2020-02-04 14:23:05.460 parsl.dataflow.dflow:452 [INFO]  Task 55 launched on executor threads
+2020-02-04 14:23:05.460 parsl.dataflow.dflow:279 [ERROR]  Task 52 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/bash.py", line 101, in remote_side_bash_executor
+    raise pe.AppFailure("[{}] App failed with exit code: {}".format(func_name, proc.returncode), proc.returncode)
+parsl.app.errors.AppFailure: ('[star_index] App failed with exit code: 127', 127)
+2020-02-04 14:23:05.460 parsl.dataflow.dflow:452 [INFO]  Task 56 launched on executor threads
+2020-02-04 14:23:05.461 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.462 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.462 parsl.dataflow.dflow:708 [INFO]  Task 57 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.463 parsl.dataflow.dflow:714 [DEBUG]  Task 57 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd446c320 state=pending>>
+2020-02-04 14:23:05.463 parsl.dataflow.dflow:452 [INFO]  Task 57 launched on executor threads
+2020-02-04 14:23:05.463 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.463 parsl.dataflow.dflow:708 [INFO]  Task 58 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.463 parsl.dataflow.dflow:714 [DEBUG]  Task 58 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd446c240 state=pending>>
+2020-02-04 14:23:05.464 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.464 parsl.dataflow.dflow:452 [INFO]  Task 58 launched on executor threads
+2020-02-04 14:23:05.465 parsl.dataflow.dflow:257 [DEBUG]  Task 54 failed
+2020-02-04 14:23:05.465 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.465 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.465 parsl.dataflow.dflow:279 [ERROR]  Task 54 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/bash.py", line 101, in remote_side_bash_executor
+    raise pe.AppFailure("[{}] App failed with exit code: {}".format(func_name, proc.returncode), proc.returncode)
+parsl.app.errors.AppFailure: ('[star_index] App failed with exit code: 127', 127)
+2020-02-04 14:23:05.466 parsl.dataflow.dflow:708 [INFO]  Task 59 submitted for App star_index, waiting on tasks []
+2020-02-04 14:23:05.466 parsl.dataflow.dflow:708 [INFO]  Task 60 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.466 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.466 parsl.dataflow.dflow:714 [DEBUG]  Task 59 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd446c908 state=pending>>
+2020-02-04 14:23:05.467 parsl.dataflow.dflow:714 [DEBUG]  Task 60 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd446c780 state=pending>>
+2020-02-04 14:23:05.468 parsl.dataflow.dflow:452 [INFO]  Task 59 launched on executor threads
+2020-02-04 14:23:05.468 parsl.app.bash.1580844185.4676135:54 [DEBUG]  Executable: 'STAR --runThreadN 1 --runMode genomeGenerate --genomeDir  "/home/users/ellenrichards/test_run_1/s006_c48208_g2_i1_m27119/gd" --genomeFastaFiles "/home/users/ellenrichards/test_run_1/s006_c48208_g2_i1_m27119.fasta" --genomeSAindexNbases 2'
+2020-02-04 14:23:05.469 parsl.dataflow.dflow:452 [INFO]  Task 60 launched on executor threads
+2020-02-04 14:23:05.469 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.472 parsl.dataflow.dflow:708 [INFO]  Task 61 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.473 parsl.dataflow.dflow:714 [DEBUG]  Task 61 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd446ce80 state=pending>>
+2020-02-04 14:23:05.473 parsl.dataflow.dflow:452 [INFO]  Task 61 launched on executor threads
+2020-02-04 14:23:05.473 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.474 parsl.dataflow.dflow:708 [INFO]  Task 62 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.474 parsl.dataflow.dflow:714 [DEBUG]  Task 62 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd446cf98 state=pending>>
+2020-02-04 14:23:05.474 parsl.dataflow.dflow:452 [INFO]  Task 62 launched on executor threads
+2020-02-04 14:23:05.474 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.474 parsl.dataflow.dflow:708 [INFO]  Task 63 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.474 parsl.dataflow.dflow:714 [DEBUG]  Task 63 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4477198 state=pending>>
+2020-02-04 14:23:05.474 parsl.dataflow.dflow:452 [INFO]  Task 63 launched on executor threads
+2020-02-04 14:23:05.474 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.474 parsl.dataflow.dflow:708 [INFO]  Task 64 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.474 parsl.dataflow.dflow:714 [DEBUG]  Task 64 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4477358 state=pending>>
+2020-02-04 14:23:05.474 parsl.dataflow.dflow:452 [INFO]  Task 64 launched on executor threads
+2020-02-04 14:23:05.474 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.474 parsl.dataflow.dflow:708 [INFO]  Task 65 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.475 parsl.dataflow.dflow:714 [DEBUG]  Task 65 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4477518 state=pending>>
+2020-02-04 14:23:05.475 parsl.dataflow.dflow:452 [INFO]  Task 65 launched on executor threads
+2020-02-04 14:23:05.475 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.475 parsl.dataflow.dflow:708 [INFO]  Task 66 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.475 parsl.dataflow.dflow:714 [DEBUG]  Task 66 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44776d8 state=pending>>
+2020-02-04 14:23:05.475 parsl.dataflow.dflow:452 [INFO]  Task 66 launched on executor threads
+2020-02-04 14:23:05.475 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.475 parsl.dataflow.dflow:708 [INFO]  Task 67 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.475 parsl.dataflow.dflow:714 [DEBUG]  Task 67 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4477898 state=pending>>
+2020-02-04 14:23:05.475 parsl.dataflow.dflow:452 [INFO]  Task 67 launched on executor threads
+2020-02-04 14:23:05.475 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.475 parsl.dataflow.dflow:708 [INFO]  Task 68 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.475 parsl.dataflow.dflow:714 [DEBUG]  Task 68 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4477a58 state=pending>>
+2020-02-04 14:23:05.476 parsl.dataflow.dflow:452 [INFO]  Task 68 launched on executor threads
+2020-02-04 14:23:05.476 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.476 parsl.dataflow.dflow:708 [INFO]  Task 69 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.476 parsl.dataflow.dflow:714 [DEBUG]  Task 69 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4477b70 state=pending>>
+2020-02-04 14:23:05.476 parsl.dataflow.dflow:452 [INFO]  Task 69 launched on executor threads
+2020-02-04 14:23:05.476 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.476 parsl.dataflow.dflow:708 [INFO]  Task 70 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.476 parsl.dataflow.dflow:714 [DEBUG]  Task 70 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4477d30 state=pending>>
+2020-02-04 14:23:05.476 parsl.dataflow.dflow:452 [INFO]  Task 70 launched on executor threads
+2020-02-04 14:23:05.476 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.477 parsl.dataflow.dflow:708 [INFO]  Task 71 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.477 parsl.dataflow.dflow:714 [DEBUG]  Task 71 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4477ef0 state=pending>>
+2020-02-04 14:23:05.477 parsl.dataflow.dflow:452 [INFO]  Task 71 launched on executor threads
+2020-02-04 14:23:05.478 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.478 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.478 parsl.dataflow.dflow:257 [DEBUG]  Task 56 failed
+2020-02-04 14:23:05.479 parsl.dataflow.dflow:708 [INFO]  Task 72 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.479 parsl.dataflow.dflow:279 [ERROR]  Task 56 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 254, in handle_exec_update
+    res.reraise()
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 163, in reraise
+    reraise(t, v, tb)
+  File "/local/cluster/lib/python3.6/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/errors.py", line 172, in wrapper
+    return func(*args, **kwargs)
+  File "/local/cluster/lib/python3.6/site-packages/parsl/app/bash.py", line 101, in remote_side_bash_executor
+    raise pe.AppFailure("[{}] App failed with exit code: {}".format(func_name, proc.returncode), proc.returncode)
+parsl.app.errors.AppFailure: ('[star_index] App failed with exit code: 127', 127)
+2020-02-04 14:23:05.479 parsl.dataflow.dflow:714 [DEBUG]  Task 72 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd446e080 state=pending>>
+2020-02-04 14:23:05.479 parsl.app.errors:158 [DEBUG]  Reraising exception of type <class 'parsl.app.errors.AppFailure'>
+2020-02-04 14:23:05.480 parsl.dataflow.dflow:452 [INFO]  Task 72 launched on executor threads
+2020-02-04 14:23:05.481 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.481 parsl.dataflow.dflow:708 [INFO]  Task 73 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.481 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.481 parsl.dataflow.dflow:714 [DEBUG]  Task 73 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd446e438 state=pending>>
+2020-02-04 14:23:05.481 parsl.dataflow.dflow:708 [INFO]  Task 74 submitted for App star_index, waiting on tasks []
+2020-02-04 14:23:05.482 parsl.dataflow.dflow:452 [INFO]  Task 73 launched on executor threads
+2020-02-04 14:23:05.482 parsl.dataflow.dflow:714 [DEBUG]  Task 74 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd446e550 state=pending>>
+2020-02-04 14:23:05.482 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.482 parsl.dataflow.dflow:452 [INFO]  Task 74 launched on executor threads
+2020-02-04 14:23:05.482 parsl.dataflow.dflow:708 [INFO]  Task 75 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.483 parsl.dataflow.dflow:714 [DEBUG]  Task 75 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd446e780 state=pending>>
+2020-02-04 14:23:05.483 parsl.dataflow.dflow:452 [INFO]  Task 75 launched on executor threads
+2020-02-04 14:23:05.483 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.483 parsl.dataflow.dflow:708 [INFO]  Task 76 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.483 parsl.dataflow.dflow:714 [DEBUG]  Task 76 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd446e9b0 state=pending>>
+2020-02-04 14:23:05.483 parsl.dataflow.dflow:452 [INFO]  Task 76 launched on executor threads
+2020-02-04 14:23:05.483 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.483 parsl.dataflow.dflow:708 [INFO]  Task 77 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.483 parsl.dataflow.dflow:714 [DEBUG]  Task 77 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd446eb70 state=pending>>
+2020-02-04 14:23:05.483 parsl.dataflow.dflow:452 [INFO]  Task 77 launched on executor threads
+2020-02-04 14:23:05.483 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.483 parsl.dataflow.dflow:708 [INFO]  Task 78 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.483 parsl.dataflow.dflow:714 [DEBUG]  Task 78 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd446ed30 state=pending>>
+2020-02-04 14:23:05.484 parsl.dataflow.dflow:452 [INFO]  Task 78 launched on executor threads
+2020-02-04 14:23:05.484 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.484 parsl.dataflow.dflow:708 [INFO]  Task 79 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.484 parsl.dataflow.dflow:714 [DEBUG]  Task 79 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd446eef0 state=pending>>
+2020-02-04 14:23:05.484 parsl.dataflow.dflow:452 [INFO]  Task 79 launched on executor threads
+2020-02-04 14:23:05.484 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.484 parsl.dataflow.dflow:708 [INFO]  Task 80 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.484 parsl.dataflow.dflow:714 [DEBUG]  Task 80 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd440b0f0 state=pending>>
+2020-02-04 14:23:05.484 parsl.dataflow.dflow:452 [INFO]  Task 80 launched on executor threads
+2020-02-04 14:23:05.484 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.484 parsl.dataflow.dflow:708 [INFO]  Task 81 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.484 parsl.dataflow.dflow:714 [DEBUG]  Task 81 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd440b2b0 state=pending>>
+2020-02-04 14:23:05.484 parsl.dataflow.dflow:452 [INFO]  Task 81 launched on executor threads
+2020-02-04 14:23:05.484 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.484 parsl.dataflow.dflow:708 [INFO]  Task 82 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.485 parsl.dataflow.dflow:714 [DEBUG]  Task 82 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd440b470 state=pending>>
+2020-02-04 14:23:05.485 parsl.dataflow.dflow:452 [INFO]  Task 82 launched on executor threads
+2020-02-04 14:23:05.485 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.485 parsl.dataflow.dflow:708 [INFO]  Task 83 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.485 parsl.dataflow.dflow:714 [DEBUG]  Task 83 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd440b630 state=pending>>
+2020-02-04 14:23:05.485 parsl.dataflow.dflow:452 [INFO]  Task 83 launched on executor threads
+2020-02-04 14:23:05.485 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.485 parsl.dataflow.dflow:708 [INFO]  Task 84 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.485 parsl.dataflow.dflow:714 [DEBUG]  Task 84 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd440b7f0 state=pending>>
+2020-02-04 14:23:05.485 parsl.dataflow.dflow:452 [INFO]  Task 84 launched on executor threads
+2020-02-04 14:23:05.485 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.485 parsl.dataflow.dflow:708 [INFO]  Task 85 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.485 parsl.dataflow.dflow:714 [DEBUG]  Task 85 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd440b9b0 state=pending>>
+2020-02-04 14:23:05.485 parsl.dataflow.dflow:452 [INFO]  Task 85 launched on executor threads
+2020-02-04 14:23:05.485 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.486 parsl.dataflow.dflow:708 [INFO]  Task 86 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.486 parsl.dataflow.dflow:714 [DEBUG]  Task 86 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd440bb70 state=pending>>
+2020-02-04 14:23:05.486 parsl.dataflow.dflow:452 [INFO]  Task 86 launched on executor threads
+2020-02-04 14:23:05.486 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.486 parsl.dataflow.dflow:708 [INFO]  Task 87 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.486 parsl.dataflow.dflow:714 [DEBUG]  Task 87 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd440bd30 state=pending>>
+2020-02-04 14:23:05.486 parsl.dataflow.dflow:452 [INFO]  Task 87 launched on executor threads
+2020-02-04 14:23:05.486 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.486 parsl.dataflow.dflow:708 [INFO]  Task 88 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.486 parsl.dataflow.dflow:714 [DEBUG]  Task 88 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd440be80 state=pending>>
+2020-02-04 14:23:05.486 parsl.dataflow.dflow:452 [INFO]  Task 88 launched on executor threads
+2020-02-04 14:23:05.486 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.486 parsl.dataflow.dflow:708 [INFO]  Task 89 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.487 parsl.dataflow.dflow:714 [DEBUG]  Task 89 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd440bfd0 state=pending>>
+2020-02-04 14:23:05.487 parsl.dataflow.dflow:452 [INFO]  Task 89 launched on executor threads
+2020-02-04 14:23:05.487 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.487 parsl.dataflow.dflow:708 [INFO]  Task 90 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.487 parsl.dataflow.dflow:714 [DEBUG]  Task 90 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44161d0 state=pending>>
+2020-02-04 14:23:05.487 parsl.dataflow.dflow:452 [INFO]  Task 90 launched on executor threads
+2020-02-04 14:23:05.487 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.487 parsl.dataflow.dflow:708 [INFO]  Task 91 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.487 parsl.dataflow.dflow:714 [DEBUG]  Task 91 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4416390 state=pending>>
+2020-02-04 14:23:05.487 parsl.dataflow.dflow:452 [INFO]  Task 91 launched on executor threads
+2020-02-04 14:23:05.487 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.487 parsl.dataflow.dflow:708 [INFO]  Task 92 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.487 parsl.dataflow.dflow:714 [DEBUG]  Task 92 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4416550 state=pending>>
+2020-02-04 14:23:05.487 parsl.dataflow.dflow:452 [INFO]  Task 92 launched on executor threads
+2020-02-04 14:23:05.487 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.488 parsl.dataflow.dflow:708 [INFO]  Task 93 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.488 parsl.dataflow.dflow:714 [DEBUG]  Task 93 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4416710 state=pending>>
+2020-02-04 14:23:05.488 parsl.dataflow.dflow:452 [INFO]  Task 93 launched on executor threads
+2020-02-04 14:23:05.488 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.488 parsl.dataflow.dflow:708 [INFO]  Task 94 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.488 parsl.dataflow.dflow:714 [DEBUG]  Task 94 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44168d0 state=pending>>
+2020-02-04 14:23:05.488 parsl.dataflow.dflow:452 [INFO]  Task 94 launched on executor threads
+2020-02-04 14:23:05.488 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.488 parsl.dataflow.dflow:708 [INFO]  Task 95 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.488 parsl.dataflow.dflow:714 [DEBUG]  Task 95 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4416a90 state=pending>>
+2020-02-04 14:23:05.488 parsl.dataflow.dflow:452 [INFO]  Task 95 launched on executor threads
+2020-02-04 14:23:05.488 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.488 parsl.dataflow.dflow:708 [INFO]  Task 96 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.488 parsl.dataflow.dflow:714 [DEBUG]  Task 96 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4416c50 state=pending>>
+2020-02-04 14:23:05.488 parsl.dataflow.dflow:452 [INFO]  Task 96 launched on executor threads
+2020-02-04 14:23:05.488 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.489 parsl.dataflow.dflow:708 [INFO]  Task 97 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.489 parsl.dataflow.dflow:714 [DEBUG]  Task 97 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4416e10 state=pending>>
+2020-02-04 14:23:05.489 parsl.dataflow.dflow:452 [INFO]  Task 97 launched on executor threads
+2020-02-04 14:23:05.489 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.489 parsl.dataflow.dflow:708 [INFO]  Task 98 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.489 parsl.dataflow.dflow:714 [DEBUG]  Task 98 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4416fd0 state=pending>>
+2020-02-04 14:23:05.489 parsl.dataflow.dflow:452 [INFO]  Task 98 launched on executor threads
+2020-02-04 14:23:05.489 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.489 parsl.dataflow.dflow:708 [INFO]  Task 99 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.489 parsl.dataflow.dflow:714 [DEBUG]  Task 99 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44201d0 state=pending>>
+2020-02-04 14:23:05.489 parsl.dataflow.dflow:452 [INFO]  Task 99 launched on executor threads
+2020-02-04 14:23:05.489 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.489 parsl.dataflow.dflow:708 [INFO]  Task 100 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.489 parsl.dataflow.dflow:714 [DEBUG]  Task 100 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4420390 state=pending>>
+2020-02-04 14:23:05.489 parsl.dataflow.dflow:452 [INFO]  Task 100 launched on executor threads
+2020-02-04 14:23:05.490 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.490 parsl.dataflow.dflow:708 [INFO]  Task 101 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.490 parsl.dataflow.dflow:714 [DEBUG]  Task 101 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4420550 state=pending>>
+2020-02-04 14:23:05.490 parsl.dataflow.dflow:452 [INFO]  Task 101 launched on executor threads
+2020-02-04 14:23:05.490 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.490 parsl.dataflow.dflow:708 [INFO]  Task 102 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.490 parsl.dataflow.dflow:714 [DEBUG]  Task 102 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4420710 state=pending>>
+2020-02-04 14:23:05.490 parsl.dataflow.dflow:452 [INFO]  Task 102 launched on executor threads
+2020-02-04 14:23:05.490 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.490 parsl.dataflow.dflow:708 [INFO]  Task 103 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.490 parsl.dataflow.dflow:714 [DEBUG]  Task 103 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44208d0 state=pending>>
+2020-02-04 14:23:05.490 parsl.dataflow.dflow:452 [INFO]  Task 103 launched on executor threads
+2020-02-04 14:23:05.492 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.492 parsl.dataflow.dflow:708 [INFO]  Task 104 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.492 parsl.dataflow.dflow:714 [DEBUG]  Task 104 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4420a90 state=pending>>
+2020-02-04 14:23:05.492 parsl.dataflow.dflow:452 [INFO]  Task 104 launched on executor threads
+2020-02-04 14:23:05.492 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.492 parsl.dataflow.dflow:708 [INFO]  Task 105 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.492 parsl.dataflow.dflow:714 [DEBUG]  Task 105 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4420ba8 state=pending>>
+2020-02-04 14:23:05.492 parsl.dataflow.dflow:452 [INFO]  Task 105 launched on executor threads
+2020-02-04 14:23:05.492 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.492 parsl.dataflow.dflow:708 [INFO]  Task 106 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.492 parsl.dataflow.dflow:714 [DEBUG]  Task 106 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4420cc0 state=pending>>
+2020-02-04 14:23:05.492 parsl.dataflow.dflow:452 [INFO]  Task 106 launched on executor threads
+2020-02-04 14:23:05.492 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.493 parsl.dataflow.dflow:708 [INFO]  Task 107 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.493 parsl.dataflow.dflow:714 [DEBUG]  Task 107 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4420dd8 state=pending>>
+2020-02-04 14:23:05.493 parsl.dataflow.dflow:452 [INFO]  Task 107 launched on executor threads
+2020-02-04 14:23:05.493 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.493 parsl.dataflow.dflow:708 [INFO]  Task 108 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.493 parsl.dataflow.dflow:714 [DEBUG]  Task 108 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4420ef0 state=pending>>
+2020-02-04 14:23:05.493 parsl.dataflow.dflow:452 [INFO]  Task 108 launched on executor threads
+2020-02-04 14:23:05.493 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.493 parsl.dataflow.dflow:708 [INFO]  Task 109 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.493 parsl.dataflow.dflow:714 [DEBUG]  Task 109 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd442b048 state=pending>>
+2020-02-04 14:23:05.493 parsl.dataflow.dflow:452 [INFO]  Task 109 launched on executor threads
+2020-02-04 14:23:05.493 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.493 parsl.dataflow.dflow:708 [INFO]  Task 110 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.493 parsl.dataflow.dflow:714 [DEBUG]  Task 110 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd442b160 state=pending>>
+2020-02-04 14:23:05.493 parsl.dataflow.dflow:452 [INFO]  Task 110 launched on executor threads
+2020-02-04 14:23:05.494 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.494 parsl.dataflow.dflow:708 [INFO]  Task 111 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.494 parsl.dataflow.dflow:714 [DEBUG]  Task 111 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd442b278 state=pending>>
+2020-02-04 14:23:05.494 parsl.dataflow.dflow:452 [INFO]  Task 111 launched on executor threads
+2020-02-04 14:23:05.494 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.494 parsl.dataflow.dflow:708 [INFO]  Task 112 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.494 parsl.dataflow.dflow:714 [DEBUG]  Task 112 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd442b390 state=pending>>
+2020-02-04 14:23:05.494 parsl.dataflow.dflow:452 [INFO]  Task 112 launched on executor threads
+2020-02-04 14:23:05.494 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.494 parsl.dataflow.dflow:708 [INFO]  Task 113 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.494 parsl.dataflow.dflow:714 [DEBUG]  Task 113 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd442b4a8 state=pending>>
+2020-02-04 14:23:05.494 parsl.dataflow.dflow:452 [INFO]  Task 113 launched on executor threads
+2020-02-04 14:23:05.494 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.494 parsl.dataflow.dflow:708 [INFO]  Task 114 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.494 parsl.dataflow.dflow:714 [DEBUG]  Task 114 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd442b5c0 state=pending>>
+2020-02-04 14:23:05.494 parsl.dataflow.dflow:452 [INFO]  Task 114 launched on executor threads
+2020-02-04 14:23:05.495 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.495 parsl.dataflow.dflow:708 [INFO]  Task 115 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.495 parsl.dataflow.dflow:714 [DEBUG]  Task 115 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd442b6d8 state=pending>>
+2020-02-04 14:23:05.495 parsl.dataflow.dflow:452 [INFO]  Task 115 launched on executor threads
+2020-02-04 14:23:05.495 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.495 parsl.dataflow.dflow:708 [INFO]  Task 116 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.495 parsl.dataflow.dflow:714 [DEBUG]  Task 116 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd442b7f0 state=pending>>
+2020-02-04 14:23:05.495 parsl.dataflow.dflow:452 [INFO]  Task 116 launched on executor threads
+2020-02-04 14:23:05.495 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.495 parsl.dataflow.dflow:708 [INFO]  Task 117 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.495 parsl.dataflow.dflow:714 [DEBUG]  Task 117 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd442b908 state=pending>>
+2020-02-04 14:23:05.495 parsl.dataflow.dflow:452 [INFO]  Task 117 launched on executor threads
+2020-02-04 14:23:05.495 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.495 parsl.dataflow.dflow:708 [INFO]  Task 118 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.495 parsl.dataflow.dflow:714 [DEBUG]  Task 118 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd442ba90 state=pending>>
+2020-02-04 14:23:05.496 parsl.dataflow.dflow:452 [INFO]  Task 118 launched on executor threads
+2020-02-04 14:23:05.496 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.496 parsl.dataflow.dflow:708 [INFO]  Task 119 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.496 parsl.dataflow.dflow:714 [DEBUG]  Task 119 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd442bc50 state=pending>>
+2020-02-04 14:23:05.496 parsl.dataflow.dflow:452 [INFO]  Task 119 launched on executor threads
+2020-02-04 14:23:05.496 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.496 parsl.dataflow.dflow:708 [INFO]  Task 120 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.496 parsl.dataflow.dflow:714 [DEBUG]  Task 120 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd442be10 state=pending>>
+2020-02-04 14:23:05.496 parsl.dataflow.dflow:452 [INFO]  Task 120 launched on executor threads
+2020-02-04 14:23:05.496 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.496 parsl.dataflow.dflow:708 [INFO]  Task 121 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.496 parsl.dataflow.dflow:714 [DEBUG]  Task 121 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd442bfd0 state=pending>>
+2020-02-04 14:23:05.496 parsl.dataflow.dflow:452 [INFO]  Task 121 launched on executor threads
+2020-02-04 14:23:05.496 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.496 parsl.dataflow.dflow:708 [INFO]  Task 122 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.497 parsl.dataflow.dflow:714 [DEBUG]  Task 122 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44391d0 state=pending>>
+2020-02-04 14:23:05.497 parsl.dataflow.dflow:452 [INFO]  Task 122 launched on executor threads
+2020-02-04 14:23:05.497 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.497 parsl.dataflow.dflow:708 [INFO]  Task 123 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.497 parsl.dataflow.dflow:714 [DEBUG]  Task 123 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4439390 state=pending>>
+2020-02-04 14:23:05.497 parsl.dataflow.dflow:452 [INFO]  Task 123 launched on executor threads
+2020-02-04 14:23:05.497 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.497 parsl.dataflow.dflow:708 [INFO]  Task 124 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.497 parsl.dataflow.dflow:714 [DEBUG]  Task 124 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4439550 state=pending>>
+2020-02-04 14:23:05.497 parsl.dataflow.dflow:452 [INFO]  Task 124 launched on executor threads
+2020-02-04 14:23:05.497 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.497 parsl.dataflow.dflow:708 [INFO]  Task 125 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.497 parsl.dataflow.dflow:714 [DEBUG]  Task 125 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4439710 state=pending>>
+2020-02-04 14:23:05.497 parsl.dataflow.dflow:452 [INFO]  Task 125 launched on executor threads
+2020-02-04 14:23:05.497 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.497 parsl.dataflow.dflow:708 [INFO]  Task 126 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.498 parsl.dataflow.dflow:714 [DEBUG]  Task 126 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd44398d0 state=pending>>
+2020-02-04 14:23:05.498 parsl.dataflow.dflow:452 [INFO]  Task 126 launched on executor threads
+2020-02-04 14:23:05.498 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.498 parsl.dataflow.dflow:708 [INFO]  Task 127 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.498 parsl.dataflow.dflow:714 [DEBUG]  Task 127 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4439a90 state=pending>>
+2020-02-04 14:23:05.498 parsl.dataflow.dflow:452 [INFO]  Task 127 launched on executor threads
+2020-02-04 14:23:05.498 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.498 parsl.dataflow.dflow:708 [INFO]  Task 128 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.498 parsl.dataflow.dflow:714 [DEBUG]  Task 128 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4439c50 state=pending>>
+2020-02-04 14:23:05.498 parsl.dataflow.dflow:452 [INFO]  Task 128 launched on executor threads
+2020-02-04 14:23:05.498 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.498 parsl.dataflow.dflow:708 [INFO]  Task 129 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.498 parsl.dataflow.dflow:714 [DEBUG]  Task 129 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4439e10 state=pending>>
+2020-02-04 14:23:05.498 parsl.dataflow.dflow:452 [INFO]  Task 129 launched on executor threads
+2020-02-04 14:23:05.498 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.499 parsl.dataflow.dflow:708 [INFO]  Task 130 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.499 parsl.dataflow.dflow:714 [DEBUG]  Task 130 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4439fd0 state=pending>>
+2020-02-04 14:23:05.499 parsl.dataflow.dflow:452 [INFO]  Task 130 launched on executor threads
+2020-02-04 14:23:05.499 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.499 parsl.dataflow.dflow:708 [INFO]  Task 131 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.499 parsl.dataflow.dflow:714 [DEBUG]  Task 131 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43c41d0 state=pending>>
+2020-02-04 14:23:05.499 parsl.dataflow.dflow:452 [INFO]  Task 131 launched on executor threads
+2020-02-04 14:23:05.499 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.499 parsl.dataflow.dflow:708 [INFO]  Task 132 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.499 parsl.dataflow.dflow:714 [DEBUG]  Task 132 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43c4390 state=pending>>
+2020-02-04 14:23:05.499 parsl.dataflow.dflow:452 [INFO]  Task 132 launched on executor threads
+2020-02-04 14:23:05.499 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.499 parsl.dataflow.dflow:708 [INFO]  Task 133 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.499 parsl.dataflow.dflow:714 [DEBUG]  Task 133 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43c4550 state=pending>>
+2020-02-04 14:23:05.499 parsl.dataflow.dflow:452 [INFO]  Task 133 launched on executor threads
+2020-02-04 14:23:05.499 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.500 parsl.dataflow.dflow:708 [INFO]  Task 134 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.500 parsl.dataflow.dflow:714 [DEBUG]  Task 134 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43c4710 state=pending>>
+2020-02-04 14:23:05.500 parsl.dataflow.dflow:452 [INFO]  Task 134 launched on executor threads
+2020-02-04 14:23:05.500 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.500 parsl.dataflow.dflow:708 [INFO]  Task 135 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.500 parsl.dataflow.dflow:714 [DEBUG]  Task 135 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43c48d0 state=pending>>
+2020-02-04 14:23:05.500 parsl.dataflow.dflow:452 [INFO]  Task 135 launched on executor threads
+2020-02-04 14:23:05.500 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.500 parsl.dataflow.dflow:708 [INFO]  Task 136 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.500 parsl.dataflow.dflow:714 [DEBUG]  Task 136 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43c4a90 state=pending>>
+2020-02-04 14:23:05.500 parsl.dataflow.dflow:452 [INFO]  Task 136 launched on executor threads
+2020-02-04 14:23:05.500 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.500 parsl.dataflow.dflow:708 [INFO]  Task 137 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.500 parsl.dataflow.dflow:714 [DEBUG]  Task 137 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43c4c50 state=pending>>
+2020-02-04 14:23:05.500 parsl.dataflow.dflow:452 [INFO]  Task 137 launched on executor threads
+2020-02-04 14:23:05.500 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.501 parsl.dataflow.dflow:708 [INFO]  Task 138 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.501 parsl.dataflow.dflow:714 [DEBUG]  Task 138 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43c4e10 state=pending>>
+2020-02-04 14:23:05.501 parsl.dataflow.dflow:452 [INFO]  Task 138 launched on executor threads
+2020-02-04 14:23:05.501 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.501 parsl.dataflow.dflow:708 [INFO]  Task 139 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.501 parsl.dataflow.dflow:714 [DEBUG]  Task 139 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43c4fd0 state=pending>>
+2020-02-04 14:23:05.501 parsl.dataflow.dflow:452 [INFO]  Task 139 launched on executor threads
+2020-02-04 14:23:05.501 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.501 parsl.dataflow.dflow:708 [INFO]  Task 140 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.501 parsl.dataflow.dflow:714 [DEBUG]  Task 140 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43ce1d0 state=pending>>
+2020-02-04 14:23:05.501 parsl.dataflow.dflow:452 [INFO]  Task 140 launched on executor threads
+2020-02-04 14:23:05.501 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.501 parsl.dataflow.dflow:708 [INFO]  Task 141 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.501 parsl.dataflow.dflow:714 [DEBUG]  Task 141 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43ce390 state=pending>>
+2020-02-04 14:23:05.501 parsl.dataflow.dflow:452 [INFO]  Task 141 launched on executor threads
+2020-02-04 14:23:05.502 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.502 parsl.dataflow.dflow:708 [INFO]  Task 142 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.502 parsl.dataflow.dflow:714 [DEBUG]  Task 142 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43ce550 state=pending>>
+2020-02-04 14:23:05.502 parsl.dataflow.dflow:452 [INFO]  Task 142 launched on executor threads
+2020-02-04 14:23:05.502 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.502 parsl.dataflow.dflow:708 [INFO]  Task 143 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.502 parsl.dataflow.dflow:714 [DEBUG]  Task 143 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43ce710 state=pending>>
+2020-02-04 14:23:05.502 parsl.dataflow.dflow:452 [INFO]  Task 143 launched on executor threads
+2020-02-04 14:23:05.502 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.502 parsl.dataflow.dflow:708 [INFO]  Task 144 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.502 parsl.dataflow.dflow:714 [DEBUG]  Task 144 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43ce8d0 state=pending>>
+2020-02-04 14:23:05.502 parsl.dataflow.dflow:452 [INFO]  Task 144 launched on executor threads
+2020-02-04 14:23:05.502 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.502 parsl.dataflow.dflow:708 [INFO]  Task 145 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.502 parsl.dataflow.dflow:714 [DEBUG]  Task 145 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43cea90 state=pending>>
+2020-02-04 14:23:05.502 parsl.dataflow.dflow:452 [INFO]  Task 145 launched on executor threads
+2020-02-04 14:23:05.503 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.503 parsl.dataflow.dflow:708 [INFO]  Task 146 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.503 parsl.dataflow.dflow:714 [DEBUG]  Task 146 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43cec50 state=pending>>
+2020-02-04 14:23:05.503 parsl.dataflow.dflow:452 [INFO]  Task 146 launched on executor threads
+2020-02-04 14:23:05.503 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.503 parsl.dataflow.dflow:708 [INFO]  Task 147 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.503 parsl.dataflow.dflow:714 [DEBUG]  Task 147 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43cee10 state=pending>>
+2020-02-04 14:23:05.503 parsl.dataflow.dflow:452 [INFO]  Task 147 launched on executor threads
+2020-02-04 14:23:05.503 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.503 parsl.dataflow.dflow:708 [INFO]  Task 148 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.503 parsl.dataflow.dflow:714 [DEBUG]  Task 148 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43cefd0 state=pending>>
+2020-02-04 14:23:05.503 parsl.dataflow.dflow:452 [INFO]  Task 148 launched on executor threads
+2020-02-04 14:23:05.503 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.503 parsl.dataflow.dflow:708 [INFO]  Task 149 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.503 parsl.dataflow.dflow:714 [DEBUG]  Task 149 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43d81d0 state=pending>>
+2020-02-04 14:23:05.503 parsl.dataflow.dflow:452 [INFO]  Task 149 launched on executor threads
+2020-02-04 14:23:05.504 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.504 parsl.dataflow.dflow:708 [INFO]  Task 150 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.504 parsl.dataflow.dflow:714 [DEBUG]  Task 150 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43d8390 state=pending>>
+2020-02-04 14:23:05.504 parsl.dataflow.dflow:452 [INFO]  Task 150 launched on executor threads
+2020-02-04 14:23:05.504 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.504 parsl.dataflow.dflow:708 [INFO]  Task 151 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.504 parsl.dataflow.dflow:714 [DEBUG]  Task 151 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43d8550 state=pending>>
+2020-02-04 14:23:05.504 parsl.dataflow.dflow:452 [INFO]  Task 151 launched on executor threads
+2020-02-04 14:23:05.504 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.504 parsl.dataflow.dflow:708 [INFO]  Task 152 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.504 parsl.dataflow.dflow:714 [DEBUG]  Task 152 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43d8710 state=pending>>
+2020-02-04 14:23:05.504 parsl.dataflow.dflow:452 [INFO]  Task 152 launched on executor threads
+2020-02-04 14:23:05.504 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.504 parsl.dataflow.dflow:708 [INFO]  Task 153 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.504 parsl.dataflow.dflow:714 [DEBUG]  Task 153 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43d88d0 state=pending>>
+2020-02-04 14:23:05.504 parsl.dataflow.dflow:452 [INFO]  Task 153 launched on executor threads
+2020-02-04 14:23:05.505 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.505 parsl.dataflow.dflow:708 [INFO]  Task 154 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.505 parsl.dataflow.dflow:714 [DEBUG]  Task 154 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43d8a90 state=pending>>
+2020-02-04 14:23:05.505 parsl.dataflow.dflow:452 [INFO]  Task 154 launched on executor threads
+2020-02-04 14:23:05.505 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.505 parsl.dataflow.dflow:708 [INFO]  Task 155 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.505 parsl.dataflow.dflow:714 [DEBUG]  Task 155 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43d8c50 state=pending>>
+2020-02-04 14:23:05.505 parsl.dataflow.dflow:452 [INFO]  Task 155 launched on executor threads
+2020-02-04 14:23:05.505 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.505 parsl.dataflow.dflow:708 [INFO]  Task 156 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.505 parsl.dataflow.dflow:714 [DEBUG]  Task 156 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43d8e10 state=pending>>
+2020-02-04 14:23:05.505 parsl.dataflow.dflow:452 [INFO]  Task 156 launched on executor threads
+2020-02-04 14:23:05.505 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.505 parsl.dataflow.dflow:708 [INFO]  Task 157 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.505 parsl.dataflow.dflow:714 [DEBUG]  Task 157 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43d8fd0 state=pending>>
+2020-02-04 14:23:05.506 parsl.dataflow.dflow:452 [INFO]  Task 157 launched on executor threads
+2020-02-04 14:23:05.506 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.506 parsl.dataflow.dflow:708 [INFO]  Task 158 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.506 parsl.dataflow.dflow:714 [DEBUG]  Task 158 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43e21d0 state=pending>>
+2020-02-04 14:23:05.506 parsl.dataflow.dflow:452 [INFO]  Task 158 launched on executor threads
+2020-02-04 14:23:05.506 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.506 parsl.dataflow.dflow:708 [INFO]  Task 159 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.506 parsl.dataflow.dflow:714 [DEBUG]  Task 159 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43e2390 state=pending>>
+2020-02-04 14:23:05.506 parsl.dataflow.dflow:452 [INFO]  Task 159 launched on executor threads
+2020-02-04 14:23:05.506 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.506 parsl.dataflow.dflow:708 [INFO]  Task 160 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.506 parsl.dataflow.dflow:714 [DEBUG]  Task 160 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43e2550 state=pending>>
+2020-02-04 14:23:05.506 parsl.dataflow.dflow:452 [INFO]  Task 160 launched on executor threads
+2020-02-04 14:23:05.506 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.506 parsl.dataflow.dflow:708 [INFO]  Task 161 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.506 parsl.dataflow.dflow:714 [DEBUG]  Task 161 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43e2710 state=pending>>
+2020-02-04 14:23:05.507 parsl.dataflow.dflow:452 [INFO]  Task 161 launched on executor threads
+2020-02-04 14:23:05.507 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.507 parsl.dataflow.dflow:708 [INFO]  Task 162 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.507 parsl.dataflow.dflow:714 [DEBUG]  Task 162 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43e28d0 state=pending>>
+2020-02-04 14:23:05.507 parsl.dataflow.dflow:452 [INFO]  Task 162 launched on executor threads
+2020-02-04 14:23:05.507 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.507 parsl.dataflow.dflow:708 [INFO]  Task 163 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.507 parsl.dataflow.dflow:714 [DEBUG]  Task 163 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43e2a90 state=pending>>
+2020-02-04 14:23:05.507 parsl.dataflow.dflow:452 [INFO]  Task 163 launched on executor threads
+2020-02-04 14:23:05.507 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.507 parsl.dataflow.dflow:708 [INFO]  Task 164 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.507 parsl.dataflow.dflow:714 [DEBUG]  Task 164 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43e2c50 state=pending>>
+2020-02-04 14:23:05.507 parsl.dataflow.dflow:452 [INFO]  Task 164 launched on executor threads
+2020-02-04 14:23:05.507 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.507 parsl.dataflow.dflow:708 [INFO]  Task 165 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.507 parsl.dataflow.dflow:714 [DEBUG]  Task 165 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43e2e10 state=pending>>
+2020-02-04 14:23:05.508 parsl.dataflow.dflow:452 [INFO]  Task 165 launched on executor threads
+2020-02-04 14:23:05.508 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.508 parsl.dataflow.dflow:708 [INFO]  Task 166 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.508 parsl.dataflow.dflow:714 [DEBUG]  Task 166 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43e2fd0 state=pending>>
+2020-02-04 14:23:05.508 parsl.dataflow.dflow:452 [INFO]  Task 166 launched on executor threads
+2020-02-04 14:23:05.508 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.508 parsl.dataflow.dflow:708 [INFO]  Task 167 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.508 parsl.dataflow.dflow:714 [DEBUG]  Task 167 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43ee1d0 state=pending>>
+2020-02-04 14:23:05.508 parsl.dataflow.dflow:452 [INFO]  Task 167 launched on executor threads
+2020-02-04 14:23:05.508 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.508 parsl.dataflow.dflow:708 [INFO]  Task 168 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.508 parsl.dataflow.dflow:714 [DEBUG]  Task 168 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43ee390 state=pending>>
+2020-02-04 14:23:05.508 parsl.dataflow.dflow:452 [INFO]  Task 168 launched on executor threads
+2020-02-04 14:23:05.508 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.508 parsl.dataflow.dflow:708 [INFO]  Task 169 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.508 parsl.dataflow.dflow:714 [DEBUG]  Task 169 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43ee550 state=pending>>
+2020-02-04 14:23:05.508 parsl.dataflow.dflow:452 [INFO]  Task 169 launched on executor threads
+2020-02-04 14:23:05.509 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.509 parsl.dataflow.dflow:708 [INFO]  Task 170 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.509 parsl.dataflow.dflow:714 [DEBUG]  Task 170 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43ee710 state=pending>>
+2020-02-04 14:23:05.509 parsl.dataflow.dflow:452 [INFO]  Task 170 launched on executor threads
+2020-02-04 14:23:05.509 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.509 parsl.dataflow.dflow:708 [INFO]  Task 171 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.509 parsl.dataflow.dflow:714 [DEBUG]  Task 171 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43ee8d0 state=pending>>
+2020-02-04 14:23:05.509 parsl.dataflow.dflow:452 [INFO]  Task 171 launched on executor threads
+2020-02-04 14:23:05.509 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.509 parsl.dataflow.dflow:708 [INFO]  Task 172 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.509 parsl.dataflow.dflow:714 [DEBUG]  Task 172 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43eea90 state=pending>>
+2020-02-04 14:23:05.509 parsl.dataflow.dflow:452 [INFO]  Task 172 launched on executor threads
+2020-02-04 14:23:05.509 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.509 parsl.dataflow.dflow:708 [INFO]  Task 173 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.509 parsl.dataflow.dflow:714 [DEBUG]  Task 173 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43eec50 state=pending>>
+2020-02-04 14:23:05.510 parsl.dataflow.dflow:452 [INFO]  Task 173 launched on executor threads
+2020-02-04 14:23:05.510 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.510 parsl.dataflow.dflow:708 [INFO]  Task 174 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.510 parsl.dataflow.dflow:714 [DEBUG]  Task 174 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43eee10 state=pending>>
+2020-02-04 14:23:05.510 parsl.dataflow.dflow:452 [INFO]  Task 174 launched on executor threads
+2020-02-04 14:23:05.510 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.510 parsl.dataflow.dflow:708 [INFO]  Task 175 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.510 parsl.dataflow.dflow:714 [DEBUG]  Task 175 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43eefd0 state=pending>>
+2020-02-04 14:23:05.510 parsl.dataflow.dflow:452 [INFO]  Task 175 launched on executor threads
+2020-02-04 14:23:05.510 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.510 parsl.dataflow.dflow:708 [INFO]  Task 176 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.510 parsl.dataflow.dflow:714 [DEBUG]  Task 176 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43f81d0 state=pending>>
+2020-02-04 14:23:05.510 parsl.dataflow.dflow:452 [INFO]  Task 176 launched on executor threads
+2020-02-04 14:23:05.510 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.510 parsl.dataflow.dflow:708 [INFO]  Task 177 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.510 parsl.dataflow.dflow:714 [DEBUG]  Task 177 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43f8390 state=pending>>
+2020-02-04 14:23:05.511 parsl.dataflow.dflow:452 [INFO]  Task 177 launched on executor threads
+2020-02-04 14:23:05.511 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.511 parsl.dataflow.dflow:708 [INFO]  Task 178 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.511 parsl.dataflow.dflow:714 [DEBUG]  Task 178 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43f8550 state=pending>>
+2020-02-04 14:23:05.511 parsl.dataflow.dflow:452 [INFO]  Task 178 launched on executor threads
+2020-02-04 14:23:05.511 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.511 parsl.dataflow.dflow:708 [INFO]  Task 179 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.511 parsl.dataflow.dflow:714 [DEBUG]  Task 179 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43f8710 state=pending>>
+2020-02-04 14:23:05.511 parsl.dataflow.dflow:452 [INFO]  Task 179 launched on executor threads
+2020-02-04 14:23:05.511 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.511 parsl.dataflow.dflow:708 [INFO]  Task 180 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.511 parsl.dataflow.dflow:714 [DEBUG]  Task 180 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43f88d0 state=pending>>
+2020-02-04 14:23:05.511 parsl.dataflow.dflow:452 [INFO]  Task 180 launched on executor threads
+2020-02-04 14:23:05.511 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.511 parsl.dataflow.dflow:708 [INFO]  Task 181 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.511 parsl.dataflow.dflow:714 [DEBUG]  Task 181 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43f8a90 state=pending>>
+2020-02-04 14:23:05.511 parsl.dataflow.dflow:452 [INFO]  Task 181 launched on executor threads
+2020-02-04 14:23:05.512 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.512 parsl.dataflow.dflow:708 [INFO]  Task 182 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.512 parsl.dataflow.dflow:714 [DEBUG]  Task 182 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43f8c50 state=pending>>
+2020-02-04 14:23:05.512 parsl.dataflow.dflow:452 [INFO]  Task 182 launched on executor threads
+2020-02-04 14:23:05.512 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.512 parsl.dataflow.dflow:708 [INFO]  Task 183 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.512 parsl.dataflow.dflow:714 [DEBUG]  Task 183 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43f8e10 state=pending>>
+2020-02-04 14:23:05.512 parsl.dataflow.dflow:452 [INFO]  Task 183 launched on executor threads
+2020-02-04 14:23:05.512 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.512 parsl.dataflow.dflow:708 [INFO]  Task 184 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.512 parsl.dataflow.dflow:714 [DEBUG]  Task 184 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43f8fd0 state=pending>>
+2020-02-04 14:23:05.512 parsl.dataflow.dflow:452 [INFO]  Task 184 launched on executor threads
+2020-02-04 14:23:05.512 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.512 parsl.dataflow.dflow:708 [INFO]  Task 185 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.512 parsl.dataflow.dflow:714 [DEBUG]  Task 185 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43831d0 state=pending>>
+2020-02-04 14:23:05.513 parsl.dataflow.dflow:452 [INFO]  Task 185 launched on executor threads
+2020-02-04 14:23:05.513 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.513 parsl.dataflow.dflow:708 [INFO]  Task 186 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.513 parsl.dataflow.dflow:714 [DEBUG]  Task 186 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4383390 state=pending>>
+2020-02-04 14:23:05.513 parsl.dataflow.dflow:452 [INFO]  Task 186 launched on executor threads
+2020-02-04 14:23:05.513 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.513 parsl.dataflow.dflow:708 [INFO]  Task 187 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.513 parsl.dataflow.dflow:714 [DEBUG]  Task 187 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4383550 state=pending>>
+2020-02-04 14:23:05.513 parsl.dataflow.dflow:452 [INFO]  Task 187 launched on executor threads
+2020-02-04 14:23:05.513 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.513 parsl.dataflow.dflow:708 [INFO]  Task 188 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.513 parsl.dataflow.dflow:714 [DEBUG]  Task 188 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4383710 state=pending>>
+2020-02-04 14:23:05.513 parsl.dataflow.dflow:452 [INFO]  Task 188 launched on executor threads
+2020-02-04 14:23:05.513 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.513 parsl.dataflow.dflow:708 [INFO]  Task 189 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.513 parsl.dataflow.dflow:714 [DEBUG]  Task 189 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43838d0 state=pending>>
+2020-02-04 14:23:05.514 parsl.dataflow.dflow:452 [INFO]  Task 189 launched on executor threads
+2020-02-04 14:23:05.514 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.514 parsl.dataflow.dflow:708 [INFO]  Task 190 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.514 parsl.dataflow.dflow:714 [DEBUG]  Task 190 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4383a90 state=pending>>
+2020-02-04 14:23:05.514 parsl.dataflow.dflow:452 [INFO]  Task 190 launched on executor threads
+2020-02-04 14:23:05.514 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.514 parsl.dataflow.dflow:708 [INFO]  Task 191 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.514 parsl.dataflow.dflow:714 [DEBUG]  Task 191 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4383c50 state=pending>>
+2020-02-04 14:23:05.514 parsl.dataflow.dflow:452 [INFO]  Task 191 launched on executor threads
+2020-02-04 14:23:05.514 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.514 parsl.dataflow.dflow:708 [INFO]  Task 192 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.514 parsl.dataflow.dflow:714 [DEBUG]  Task 192 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4383e10 state=pending>>
+2020-02-04 14:23:05.514 parsl.dataflow.dflow:452 [INFO]  Task 192 launched on executor threads
+2020-02-04 14:23:05.514 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.514 parsl.dataflow.dflow:708 [INFO]  Task 193 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.514 parsl.dataflow.dflow:714 [DEBUG]  Task 193 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4383fd0 state=pending>>
+2020-02-04 14:23:05.515 parsl.dataflow.dflow:452 [INFO]  Task 193 launched on executor threads
+2020-02-04 14:23:05.515 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.515 parsl.dataflow.dflow:708 [INFO]  Task 194 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.515 parsl.dataflow.dflow:714 [DEBUG]  Task 194 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd438d1d0 state=pending>>
+2020-02-04 14:23:05.515 parsl.dataflow.dflow:452 [INFO]  Task 194 launched on executor threads
+2020-02-04 14:23:05.515 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.515 parsl.dataflow.dflow:708 [INFO]  Task 195 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.515 parsl.dataflow.dflow:714 [DEBUG]  Task 195 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd438d390 state=pending>>
+2020-02-04 14:23:05.515 parsl.dataflow.dflow:452 [INFO]  Task 195 launched on executor threads
+2020-02-04 14:23:05.515 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.515 parsl.dataflow.dflow:708 [INFO]  Task 196 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.515 parsl.dataflow.dflow:714 [DEBUG]  Task 196 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd438d550 state=pending>>
+2020-02-04 14:23:05.515 parsl.dataflow.dflow:452 [INFO]  Task 196 launched on executor threads
+2020-02-04 14:23:05.515 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.515 parsl.dataflow.dflow:708 [INFO]  Task 197 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.515 parsl.dataflow.dflow:714 [DEBUG]  Task 197 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd438d710 state=pending>>
+2020-02-04 14:23:05.515 parsl.dataflow.dflow:452 [INFO]  Task 197 launched on executor threads
+2020-02-04 14:23:05.516 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.516 parsl.dataflow.dflow:708 [INFO]  Task 198 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.516 parsl.dataflow.dflow:714 [DEBUG]  Task 198 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd438d8d0 state=pending>>
+2020-02-04 14:23:05.516 parsl.dataflow.dflow:452 [INFO]  Task 198 launched on executor threads
+2020-02-04 14:23:05.516 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.516 parsl.dataflow.dflow:708 [INFO]  Task 199 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.516 parsl.dataflow.dflow:714 [DEBUG]  Task 199 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd438da90 state=pending>>
+2020-02-04 14:23:05.516 parsl.dataflow.dflow:452 [INFO]  Task 199 launched on executor threads
+2020-02-04 14:23:05.516 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.516 parsl.dataflow.dflow:708 [INFO]  Task 200 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.516 parsl.dataflow.dflow:714 [DEBUG]  Task 200 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd438dc50 state=pending>>
+2020-02-04 14:23:05.516 parsl.dataflow.dflow:452 [INFO]  Task 200 launched on executor threads
+2020-02-04 14:23:05.516 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.516 parsl.dataflow.dflow:708 [INFO]  Task 201 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.516 parsl.dataflow.dflow:714 [DEBUG]  Task 201 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd438de10 state=pending>>
+2020-02-04 14:23:05.516 parsl.dataflow.dflow:452 [INFO]  Task 201 launched on executor threads
+2020-02-04 14:23:05.517 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.517 parsl.dataflow.dflow:708 [INFO]  Task 202 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.517 parsl.dataflow.dflow:714 [DEBUG]  Task 202 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd438dfd0 state=pending>>
+2020-02-04 14:23:05.517 parsl.dataflow.dflow:452 [INFO]  Task 202 launched on executor threads
+2020-02-04 14:23:05.517 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.517 parsl.dataflow.dflow:708 [INFO]  Task 203 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.517 parsl.dataflow.dflow:714 [DEBUG]  Task 203 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43981d0 state=pending>>
+2020-02-04 14:23:05.517 parsl.dataflow.dflow:452 [INFO]  Task 203 launched on executor threads
+2020-02-04 14:23:05.517 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.517 parsl.dataflow.dflow:708 [INFO]  Task 204 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.517 parsl.dataflow.dflow:714 [DEBUG]  Task 204 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4398390 state=pending>>
+2020-02-04 14:23:05.517 parsl.dataflow.dflow:452 [INFO]  Task 204 launched on executor threads
+2020-02-04 14:23:05.517 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.517 parsl.dataflow.dflow:708 [INFO]  Task 205 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.517 parsl.dataflow.dflow:714 [DEBUG]  Task 205 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4398550 state=pending>>
+2020-02-04 14:23:05.517 parsl.dataflow.dflow:452 [INFO]  Task 205 launched on executor threads
+2020-02-04 14:23:05.518 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.518 parsl.dataflow.dflow:708 [INFO]  Task 206 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.518 parsl.dataflow.dflow:714 [DEBUG]  Task 206 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4398710 state=pending>>
+2020-02-04 14:23:05.518 parsl.dataflow.dflow:452 [INFO]  Task 206 launched on executor threads
+2020-02-04 14:23:05.518 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.518 parsl.dataflow.dflow:708 [INFO]  Task 207 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.518 parsl.dataflow.dflow:714 [DEBUG]  Task 207 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43988d0 state=pending>>
+2020-02-04 14:23:05.518 parsl.dataflow.dflow:452 [INFO]  Task 207 launched on executor threads
+2020-02-04 14:23:05.518 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.518 parsl.dataflow.dflow:708 [INFO]  Task 208 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.518 parsl.dataflow.dflow:714 [DEBUG]  Task 208 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4398a90 state=pending>>
+2020-02-04 14:23:05.518 parsl.dataflow.dflow:452 [INFO]  Task 208 launched on executor threads
+2020-02-04 14:23:05.518 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.518 parsl.dataflow.dflow:708 [INFO]  Task 209 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.518 parsl.dataflow.dflow:714 [DEBUG]  Task 209 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4398c50 state=pending>>
+2020-02-04 14:23:05.519 parsl.dataflow.dflow:452 [INFO]  Task 209 launched on executor threads
+2020-02-04 14:23:05.519 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.519 parsl.dataflow.dflow:708 [INFO]  Task 210 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.519 parsl.dataflow.dflow:714 [DEBUG]  Task 210 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4398e10 state=pending>>
+2020-02-04 14:23:05.519 parsl.dataflow.dflow:452 [INFO]  Task 210 launched on executor threads
+2020-02-04 14:23:05.519 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.519 parsl.dataflow.dflow:708 [INFO]  Task 211 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.519 parsl.dataflow.dflow:714 [DEBUG]  Task 211 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd4398fd0 state=pending>>
+2020-02-04 14:23:05.519 parsl.dataflow.dflow:452 [INFO]  Task 211 launched on executor threads
+2020-02-04 14:23:05.519 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.519 parsl.dataflow.dflow:708 [INFO]  Task 212 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.519 parsl.dataflow.dflow:714 [DEBUG]  Task 212 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43a41d0 state=pending>>
+2020-02-04 14:23:05.519 parsl.dataflow.dflow:452 [INFO]  Task 212 launched on executor threads
+2020-02-04 14:23:05.519 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.519 parsl.dataflow.dflow:708 [INFO]  Task 213 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.519 parsl.dataflow.dflow:714 [DEBUG]  Task 213 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43a4390 state=pending>>
+2020-02-04 14:23:05.520 parsl.dataflow.dflow:452 [INFO]  Task 213 launched on executor threads
+2020-02-04 14:23:05.520 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.520 parsl.dataflow.dflow:708 [INFO]  Task 214 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.520 parsl.dataflow.dflow:714 [DEBUG]  Task 214 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43a4550 state=pending>>
+2020-02-04 14:23:05.520 parsl.dataflow.dflow:452 [INFO]  Task 214 launched on executor threads
+2020-02-04 14:23:05.520 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.520 parsl.dataflow.dflow:708 [INFO]  Task 215 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.520 parsl.dataflow.dflow:714 [DEBUG]  Task 215 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43a4710 state=pending>>
+2020-02-04 14:23:05.520 parsl.dataflow.dflow:452 [INFO]  Task 215 launched on executor threads
+2020-02-04 14:23:05.520 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.520 parsl.dataflow.dflow:708 [INFO]  Task 216 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.520 parsl.dataflow.dflow:714 [DEBUG]  Task 216 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43a48d0 state=pending>>
+2020-02-04 14:23:05.520 parsl.dataflow.dflow:452 [INFO]  Task 216 launched on executor threads
+2020-02-04 14:23:05.520 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.520 parsl.dataflow.dflow:708 [INFO]  Task 217 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.520 parsl.dataflow.dflow:714 [DEBUG]  Task 217 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43a4a90 state=pending>>
+2020-02-04 14:23:05.520 parsl.dataflow.dflow:452 [INFO]  Task 217 launched on executor threads
+2020-02-04 14:23:05.521 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.521 parsl.dataflow.dflow:708 [INFO]  Task 218 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.521 parsl.dataflow.dflow:714 [DEBUG]  Task 218 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43a4c50 state=pending>>
+2020-02-04 14:23:05.521 parsl.dataflow.dflow:452 [INFO]  Task 218 launched on executor threads
+2020-02-04 14:23:05.521 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.521 parsl.dataflow.dflow:708 [INFO]  Task 219 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.521 parsl.dataflow.dflow:714 [DEBUG]  Task 219 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43a4e10 state=pending>>
+2020-02-04 14:23:05.521 parsl.dataflow.dflow:452 [INFO]  Task 219 launched on executor threads
+2020-02-04 14:23:05.521 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.521 parsl.dataflow.dflow:708 [INFO]  Task 220 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.521 parsl.dataflow.dflow:714 [DEBUG]  Task 220 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43a4fd0 state=pending>>
+2020-02-04 14:23:05.521 parsl.dataflow.dflow:452 [INFO]  Task 220 launched on executor threads
+2020-02-04 14:23:05.521 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.521 parsl.dataflow.dflow:708 [INFO]  Task 221 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.521 parsl.dataflow.dflow:714 [DEBUG]  Task 221 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43ae1d0 state=pending>>
+2020-02-04 14:23:05.521 parsl.dataflow.dflow:452 [INFO]  Task 221 launched on executor threads
+2020-02-04 14:23:05.522 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.522 parsl.dataflow.dflow:708 [INFO]  Task 222 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.522 parsl.dataflow.dflow:714 [DEBUG]  Task 222 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43ae390 state=pending>>
+2020-02-04 14:23:05.522 parsl.dataflow.dflow:452 [INFO]  Task 222 launched on executor threads
+2020-02-04 14:23:05.522 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.522 parsl.dataflow.dflow:708 [INFO]  Task 223 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.522 parsl.dataflow.dflow:714 [DEBUG]  Task 223 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43ae550 state=pending>>
+2020-02-04 14:23:05.522 parsl.dataflow.dflow:452 [INFO]  Task 223 launched on executor threads
+2020-02-04 14:23:05.522 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.522 parsl.dataflow.dflow:708 [INFO]  Task 224 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.522 parsl.dataflow.dflow:714 [DEBUG]  Task 224 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43ae710 state=pending>>
+2020-02-04 14:23:05.522 parsl.dataflow.dflow:452 [INFO]  Task 224 launched on executor threads
+2020-02-04 14:23:05.522 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.522 parsl.dataflow.dflow:708 [INFO]  Task 225 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.522 parsl.dataflow.dflow:714 [DEBUG]  Task 225 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43ae8d0 state=pending>>
+2020-02-04 14:23:05.522 parsl.dataflow.dflow:452 [INFO]  Task 225 launched on executor threads
+2020-02-04 14:23:05.523 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.523 parsl.dataflow.dflow:708 [INFO]  Task 226 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.523 parsl.dataflow.dflow:714 [DEBUG]  Task 226 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43aea90 state=pending>>
+2020-02-04 14:23:05.523 parsl.dataflow.dflow:452 [INFO]  Task 226 launched on executor threads
+2020-02-04 14:23:05.523 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.523 parsl.dataflow.dflow:708 [INFO]  Task 227 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.523 parsl.dataflow.dflow:714 [DEBUG]  Task 227 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43aec50 state=pending>>
+2020-02-04 14:23:05.523 parsl.dataflow.dflow:452 [INFO]  Task 227 launched on executor threads
+2020-02-04 14:23:05.523 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.523 parsl.dataflow.dflow:708 [INFO]  Task 228 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.523 parsl.dataflow.dflow:714 [DEBUG]  Task 228 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43aee10 state=pending>>
+2020-02-04 14:23:05.523 parsl.dataflow.dflow:452 [INFO]  Task 228 launched on executor threads
+2020-02-04 14:23:05.523 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.523 parsl.dataflow.dflow:708 [INFO]  Task 229 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.523 parsl.dataflow.dflow:714 [DEBUG]  Task 229 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43aefd0 state=pending>>
+2020-02-04 14:23:05.523 parsl.dataflow.dflow:452 [INFO]  Task 229 launched on executor threads
+2020-02-04 14:23:05.523 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.524 parsl.dataflow.dflow:708 [INFO]  Task 230 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.524 parsl.dataflow.dflow:714 [DEBUG]  Task 230 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43b81d0 state=pending>>
+2020-02-04 14:23:05.524 parsl.dataflow.dflow:452 [INFO]  Task 230 launched on executor threads
+2020-02-04 14:23:05.524 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.524 parsl.dataflow.dflow:708 [INFO]  Task 231 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.524 parsl.dataflow.dflow:714 [DEBUG]  Task 231 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43b8390 state=pending>>
+2020-02-04 14:23:05.524 parsl.dataflow.dflow:452 [INFO]  Task 231 launched on executor threads
+2020-02-04 14:23:05.524 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.524 parsl.dataflow.dflow:708 [INFO]  Task 232 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.524 parsl.dataflow.dflow:714 [DEBUG]  Task 232 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43b8550 state=pending>>
+2020-02-04 14:23:05.524 parsl.dataflow.dflow:452 [INFO]  Task 232 launched on executor threads
+2020-02-04 14:23:05.524 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:23:05.524 parsl.dataflow.dflow:708 [INFO]  Task 233 submitted for App run_single_transcript, waiting on tasks []
+2020-02-04 14:23:05.524 parsl.dataflow.dflow:714 [DEBUG]  Task 233 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2fd43b8710 state=pending>>
+2020-02-04 14:23:05.524 parsl.dataflow.dflow:452 [INFO]  Task 233 launched on executor threads
+2020-02-04 14:23:05.525 parsl.dataflow.dflow:864 [INFO]  DFK cleanup initiated
+2020-02-04 14:23:05.525 parsl.dataflow.dflow:750 [INFO]  Summary of tasks in DFK:
+2020-02-04 14:23:05.525 parsl.dataflow.dflow:781 [INFO]  Tasks in state States.failed: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 22, 24, 28, 29, 30, 31, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56
+2020-02-04 14:23:05.525 parsl.dataflow.dflow:781 [INFO]  Tasks in state States.launched: 20, 21, 23, 25, 26, 27, 32, 33, 35, 37, 39, 41, 43, 45, 47, 49, 51, 53, 55, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233
+2020-02-04 14:23:05.525 parsl.dataflow.dflow:788 [INFO]  End of summary
+2020-02-04 14:23:05.525 parsl.dataflow.dflow:888 [INFO]  Terminating flow_control and strategy threads
+2020-02-04 14:23:05.526 parsl.executors.threads:96 [DEBUG]  Done with executor shutdown
+2020-02-04 14:23:05.526 parsl.executors.threads:96 [DEBUG]  Done with executor shutdown
+2020-02-04 14:23:05.526 parsl.dataflow.dflow:920 [INFO]  DFK cleanup complete

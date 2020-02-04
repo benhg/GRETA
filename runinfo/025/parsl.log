@@ -1,0 +1,125 @@
+2020-02-04 14:53:16.655 parsl.dataflow.dflow:83 [DEBUG]  Starting DataFlowKernel with config
+Config(
+    app_cache=True, 
+    checkpoint_files=None, 
+    checkpoint_mode=None, 
+    checkpoint_period=None, 
+    data_management_max_threads=10, 
+    executors=[HighThroughputExecutor(
+        address='172.16.52.2', 
+        cores_per_worker=1.0, 
+        heartbeat_period=30, 
+        heartbeat_threshold=120, 
+        interchange_port_range=(55000, 56000), 
+        label='workers', 
+        launch_cmd='process_worker_pool.py {debug} {max_workers} -p {prefetch_capacity} -c {cores_per_worker} -m {mem_per_worker} --poll {poll_period} --task_url={task_url} --result_url={result_url} --logdir={logdir} --block_id={{block_id}} --hb_period={heartbeat_period} --hb_threshold={heartbeat_threshold} ', 
+        managed=True, 
+        max_workers=inf, 
+        mem_per_worker=None, 
+        poll_period=10, 
+        prefetch_capacity=0, 
+        provider=GridEngineProvider(
+            channel=LocalChannel(
+                envs={}, 
+                script_dir=None, 
+                userhome='/home/users/ellenrichards/GRETA'
+            ), 
+            init_blocks=1, 
+            launcher=SingleNodeLauncher(), 
+            max_blocks=20, 
+            min_blocks=0, 
+            nodes_per_block=1, 
+            parallelism=1, 
+            scheduler_options='', 
+            walltime='00:10:00', 
+            worker_init=''
+        ), 
+        storage_access=None, 
+        suppress_failure=True, 
+        worker_debug=False, 
+        worker_logdir_root=None, 
+        worker_port_range=(54000, 55000), 
+        worker_ports=None, 
+        working_dir=None
+    ), ThreadPoolExecutor(
+        label='login', 
+        managed=True, 
+        max_threads=20, 
+        storage_access=None, 
+        thread_name_prefix='', 
+        working_dir=None
+    )], 
+    initialize_logging=True, 
+    lazy_errors=True, 
+    max_idletime=120.0, 
+    monitoring=None, 
+    retries=0, 
+    run_dir='runinfo', 
+    strategy='simple', 
+    usage_tracking=False
+)
+2020-02-04 14:53:16.655 parsl.dataflow.dflow:84 [INFO]  Parsl version: 0.9.0
+2020-02-04 14:53:16.656 parsl.dataflow.usage_tracking.usage:126 [DEBUG]  Tracking status: False
+2020-02-04 14:53:16.656 parsl.dataflow.usage_tracking.usage:127 [DEBUG]  Testing mode   : False
+2020-02-04 14:53:16.656 parsl.dataflow.dflow:110 [INFO]  Run id is: 54384c68-ff54-4f8d-ba0e-f3f4f1d0b114
+2020-02-04 14:53:16.770 parsl.dataflow.memoization:52 [INFO]  App caching initialized
+2020-02-04 14:53:16.773 parsl.executors.high_throughput.executor:453 [DEBUG]  Starting queue management thread
+2020-02-04 14:53:16.773 parsl.executors.high_throughput.executor:326 [DEBUG]  [MTHREAD] queue management worker starting
+2020-02-04 14:53:16.773 parsl.executors.high_throughput.executor:457 [DEBUG]  Started queue management thread
+2020-02-04 14:53:16.786 parsl.executors.high_throughput.executor:289 [DEBUG]  Created management thread: <Thread(HTEX-Queue-Management-Thread, started daemon 139806596122368)>
+2020-02-04 14:53:16.786 parsl.executors.high_throughput.executor:263 [DEBUG]  Launch command: process_worker_pool.py   -p 0 -c 1.0 -m None --poll 10 --task_url=tcp://172.16.52.2:54307 --result_url=tcp://172.16.52.2:54914 --logdir=/home/users/ellenrichards/GRETA/runinfo/025/workers --block_id={block_id} --hb_period=30 --hb_threshold=120 
+2020-02-04 14:53:16.786 parsl.executors.high_throughput.executor:266 [DEBUG]  Starting HighThroughputExecutor with provider:
+GridEngineProvider(
+    channel=LocalChannel(
+        envs={}, 
+        script_dir='/home/users/ellenrichards/GRETA/runinfo/025/submit_scripts', 
+        userhome='/home/users/ellenrichards/GRETA'
+    ), 
+    init_blocks=1, 
+    launcher=SingleNodeLauncher(), 
+    max_blocks=20, 
+    min_blocks=0, 
+    nodes_per_block=1, 
+    parallelism=1, 
+    scheduler_options='', 
+    walltime='00:10:00', 
+    worker_init=''
+)
+2020-02-04 14:53:16.791 parsl.providers.grid_engine.grid_engine:96 [DEBUG]  Requesting one block with 1 nodes per block and 1 tasks per node
+2020-02-04 14:53:16.791 parsl.providers.grid_engine.grid_engine:139 [DEBUG]  Writing submit script
+2020-02-04 14:53:16.829 parsl.executors.high_throughput.executor:569 [DEBUG]  Launched block 0->19881
+2020-02-04 14:53:16.829 parsl.dataflow.strategy:125 [DEBUG]  Scaling strategy: simple
+2020-02-04 14:53:16.939 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 14:53:16.940 parsl.dataflow.dflow:708 [INFO]  Task 0 submitted for App star_index, waiting on tasks []
+2020-02-04 14:53:16.940 parsl.dataflow.dflow:714 [DEBUG]  Task 0 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f2749c76e10 state=pending>>
+2020-02-04 14:53:16.940 parsl.executors.high_throughput.executor:537 [DEBUG]  Pushing function <function star_index at 0x7f2749c740d0> to queue with args (<function star_index at 0x7f2749c74a60>, '/home/users/ellenrichards/test_run_1/', '/home/users/ellenrichards/test_run_1/s008_c41703_g1_i1_m8507/gd', 's008_c41703_g1_i1_m8507.fasta')
+2020-02-04 14:53:17.064 parsl.dataflow.dflow:452 [INFO]  Task 0 launched on executor workers
+2020-02-04 14:53:17.875 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 1 active tasks, 0/0/1 running/submitted/pending blocks, and 0 connected workers
+2020-02-04 14:53:22.872 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 1 active tasks, 0/0/1 running/submitted/pending blocks, and 0 connected workers
+2020-02-04 14:53:27.872 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 1 active tasks, 0/0/1 running/submitted/pending blocks, and 0 connected workers
+2020-02-04 14:53:32.872 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 1 active tasks, 1/0/0 running/submitted/pending blocks, and 0 connected workers
+2020-02-04 14:53:37.873 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 1 active tasks, 0/0/0 running/submitted/pending blocks, and 0 connected workers
+2020-02-04 14:53:37.874 parsl.dataflow.strategy:259 [DEBUG]  Requesting 1 more blocks
+2020-02-04 14:53:37.874 parsl.providers.grid_engine.grid_engine:96 [DEBUG]  Requesting one block with 1 nodes per block and 1 tasks per node
+2020-02-04 14:53:37.874 parsl.providers.grid_engine.grid_engine:139 [DEBUG]  Writing submit script
+2020-02-04 14:53:37.913 parsl.executors.high_throughput.executor:569 [DEBUG]  Launched block 1->19882
+2020-02-04 14:53:42.874 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 1 active tasks, 0/0/1 running/submitted/pending blocks, and 0 connected workers
+2020-02-04 14:53:47.874 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 1 active tasks, 1/0/0 running/submitted/pending blocks, and 0 connected workers
+2020-02-04 14:53:52.346 parsl.dataflow.dflow:288 [INFO]  Task 0 completed
+2020-02-04 14:53:52.875 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 0 active tasks, 1/0/0 running/submitted/pending blocks, and 48 connected workers
+2020-02-04 14:53:52.875 parsl.dataflow.strategy:226 [DEBUG]  Executor workers has 0 active tasks; starting kill timer (if idle time exceeds 120.0s, resources will be removed)
+2020-02-04 14:53:57.875 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 0 active tasks, 1/0/0 running/submitted/pending blocks, and 48 connected workers
+2020-02-04 14:54:02.874 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 0 active tasks, 0/0/0 running/submitted/pending blocks, and 48 connected workers
+2020-02-04 14:54:07.873 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 0 active tasks, 0/0/0 running/submitted/pending blocks, and 48 connected workers
+2020-02-04 14:54:12.874 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 0 active tasks, 0/0/0 running/submitted/pending blocks, and 48 connected workers
+2020-02-04 14:54:17.873 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 0 active tasks, 0/0/0 running/submitted/pending blocks, and 48 connected workers
+2020-02-04 14:54:22.876 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 0 active tasks, 0/0/0 running/submitted/pending blocks, and 48 connected workers
+2020-02-04 14:54:27.874 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 0 active tasks, 0/0/0 running/submitted/pending blocks, and 48 connected workers
+2020-02-04 14:54:32.875 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 0 active tasks, 0/0/0 running/submitted/pending blocks, and 48 connected workers
+2020-02-04 14:54:37.874 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 0 active tasks, 0/0/0 running/submitted/pending blocks, and 48 connected workers
+2020-02-04 14:54:42.875 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 0 active tasks, 0/0/0 running/submitted/pending blocks, and 48 connected workers
+2020-02-04 14:54:43.248 parsl.dataflow.dflow:864 [INFO]  DFK cleanup initiated
+2020-02-04 14:54:43.249 parsl.dataflow.dflow:750 [INFO]  Summary of tasks in DFK:
+2020-02-04 14:54:43.249 parsl.dataflow.dflow:781 [INFO]  Tasks in state States.done: 0
+2020-02-04 14:54:43.249 parsl.dataflow.dflow:788 [INFO]  End of summary
+2020-02-04 14:54:43.250 parsl.dataflow.dflow:888 [INFO]  Terminating flow_control and strategy threads
