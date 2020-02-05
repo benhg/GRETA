@@ -1,0 +1,3 @@
+2020-02-05 12:48:18.727 worker_log:467 Rank:6 [INFO]  Worker 6 started
+2020-02-05 12:48:18.728 worker_log:469 Rank:6 [DEBUG]  Debug logging enabled
+2020-02-05 12:48:18.857 worker_log:478 Rank:6 [INFO]  Received task 7

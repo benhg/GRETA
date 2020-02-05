@@ -1,0 +1,489 @@
+2020-02-05 12:48:18.832 parsl:592 Rank:0 [INFO]  Python version: 3.6.4 (default, Feb 10 2018, 20:32:45) 
+[GCC 4.8.5 20150623 (Red Hat 4.8.5-16)]
+2020-02-05 12:48:18.832 parsl:593 Rank:0 [INFO]  Debug logging: True
+2020-02-05 12:48:18.833 parsl:594 Rank:0 [INFO]  Log dir: /home/users/ellenrichards/GRETA/runinfo/101/workers
+2020-02-05 12:48:18.833 parsl:595 Rank:0 [INFO]  Manager ID: 910fc7f00d59
+2020-02-05 12:48:18.833 parsl:596 Rank:0 [INFO]  Block ID: 19
+2020-02-05 12:48:18.833 parsl:597 Rank:0 [INFO]  cores_per_worker: 1.0
+2020-02-05 12:48:18.833 parsl:598 Rank:0 [INFO]  mem_per_worker: None
+2020-02-05 12:48:18.833 parsl:599 Rank:0 [INFO]  task_url: tcp://172.16.52.2:54991
+2020-02-05 12:48:18.833 parsl:600 Rank:0 [INFO]  result_url: tcp://172.16.52.2:54613
+2020-02-05 12:48:18.833 parsl:601 Rank:0 [INFO]  max_workers: inf
+2020-02-05 12:48:18.833 parsl:602 Rank:0 [INFO]  poll_period: 10
+2020-02-05 12:48:18.833 parsl:603 Rank:0 [INFO]  Prefetch capacity: 0
+2020-02-05 12:48:18.833 parsl:108 Rank:0 [INFO]  Manager started
+2020-02-05 12:48:18.834 parsl:122 Rank:0 [INFO]  Manager connected
+2020-02-05 12:48:18.834 parsl:148 Rank:0 [INFO]  Manager will spawn 48 workers
+2020-02-05 12:48:18.982 parsl:370 Rank:0 [DEBUG]  Manager synced with workers
+2020-02-05 12:48:18.990 parsl:199 Rank:0 [INFO]  [TASK PULL THREAD] starting
+2020-02-05 12:48:19.001 parsl:279 Rank:0 [DEBUG]  [RESULT_PUSH_THREAD] Starting thread
+2020-02-05 12:48:19.002 parsl:282 Rank:0 [DEBUG]  [RESULT_PUSH_THREAD] push poll period: 0.01
+2020-02-05 12:48:19.003 parsl:205 Rank:0 [DEBUG]  Sending registration message: b'{"parsl_v": "0.9.0", "python_v": "3.6.4", "worker_count": 48, "block_id": "19", "prefetch_capacity": 0, "max_capacity": 48, "os": "Linux", "hostname": "tomato.blt.lclark.local", "dir": "/home/users/ellenrichards/GRETA", "cpu_count": 12, "total_memory": 540756611072, "reg_time": "2020-02-05 12:48:19"}'
+2020-02-05 12:48:19.004 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:47, pending tasks:0
+2020-02-05 12:48:19.004 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 47
+2020-02-05 12:48:19.009 parsl:315 Rank:0 [DEBUG]  [WORKER_WATCHDOG_THREAD] Starting thread
+2020-02-05 12:48:19.010 parsl:385 Rank:0 [INFO]  Loop start
+2020-02-05 12:48:19.014 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:48:19.014 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:47, pending tasks:0
+2020-02-05 12:48:19.014 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 47
+2020-02-05 12:48:19.034 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:48:19.035 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:48:19.035 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:48:19.075 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:48:19.075 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:48:19.075 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:48:19.155 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:48:19.156 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:48:19.156 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:48:19.316 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:48:19.316 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:48:19.316 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:48:19.637 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:48:19.637 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:48:19.637 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:48:20.278 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:48:20.278 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:48:20.278 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:48:21.560 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:48:21.560 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:48:21.560 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:48:24.123 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:48:24.123 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:48:24.123 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:48:29.249 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:48:29.249 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:48:29.249 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:48:39.491 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:48:39.492 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:48:39.492 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:48:59.993 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:48:59.993 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:48:59.993 parsl:188 Rank:0 [DEBUG]  Return from heartbeat: None
+2020-02-05 12:48:59.993 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:48:59.994 parsl:243 Rank:0 [DEBUG]  Got heartbeat from interchange
+2020-02-05 12:48:59.994 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:48:59.994 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:48:59.994 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:48:59.994 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:48:59.994 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:49:00.014 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:49:00.015 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:49:00.015 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:49:00.055 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:49:00.055 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:49:00.055 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:49:00.135 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:49:00.135 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:49:00.135 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:49:00.295 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:49:00.296 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:49:00.296 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:49:00.616 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:49:00.616 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:49:00.616 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:49:01.257 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:49:01.257 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:49:01.257 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:49:02.538 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:49:02.539 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:49:02.539 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:49:05.101 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:49:05.101 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:49:05.101 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:49:10.227 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:49:10.227 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:49:10.227 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:49:20.478 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:49:20.478 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:49:20.478 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:49:40.962 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:49:40.962 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:49:40.963 parsl:188 Rank:0 [DEBUG]  Return from heartbeat: None
+2020-02-05 12:49:40.963 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:49:40.964 parsl:243 Rank:0 [DEBUG]  Got heartbeat from interchange
+2020-02-05 12:49:40.964 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:49:40.964 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:49:40.964 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:49:40.964 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:49:40.964 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:49:40.985 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:49:40.985 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:49:40.985 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:49:41.025 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:49:41.025 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:49:41.025 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:49:41.106 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:49:41.106 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:49:41.106 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:49:41.266 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:49:41.266 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:49:41.266 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:49:41.587 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:49:41.587 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:49:41.587 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:49:42.228 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:49:42.228 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:49:42.228 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:49:43.510 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:49:43.510 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:49:43.510 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:49:46.073 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:49:46.073 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:49:46.073 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:49:51.198 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:49:51.198 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:49:51.199 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:50:01.449 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:50:01.449 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:50:01.450 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:50:21.951 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:50:21.952 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:50:21.952 parsl:188 Rank:0 [DEBUG]  Return from heartbeat: None
+2020-02-05 12:50:21.952 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:50:21.953 parsl:243 Rank:0 [DEBUG]  Got heartbeat from interchange
+2020-02-05 12:50:21.953 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:50:21.954 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:50:21.954 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:50:21.954 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:50:21.954 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:50:21.974 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:50:21.974 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:50:21.974 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:50:22.015 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:50:22.015 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:50:22.015 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:50:22.095 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:50:22.095 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:50:22.095 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:50:22.256 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:50:22.256 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:50:22.256 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:50:22.576 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:50:22.577 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:50:22.577 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:50:23.217 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:50:23.218 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:50:23.218 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:50:24.499 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:50:24.500 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:50:24.500 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:50:27.063 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:50:27.063 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:50:27.063 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:50:32.188 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:50:32.189 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:50:32.189 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:50:42.439 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:50:42.440 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:50:42.440 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:02.941 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:51:02.942 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:02.943 parsl:188 Rank:0 [DEBUG]  Return from heartbeat: None
+2020-02-05 12:51:02.943 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:02.943 parsl:243 Rank:0 [DEBUG]  Got heartbeat from interchange
+2020-02-05 12:51:02.943 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:02.944 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:02.944 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:51:02.944 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:02.944 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:02.964 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:51:02.964 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:02.964 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:03.005 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:51:03.005 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:03.005 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:03.085 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:51:03.085 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:03.086 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:03.246 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:51:03.246 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:03.246 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:03.567 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:51:03.567 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:03.567 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:04.208 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:51:04.208 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:04.208 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:05.489 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:51:05.490 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:05.490 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:08.052 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:51:08.052 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:08.053 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:13.178 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:51:13.178 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:13.178 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:23.429 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:51:23.429 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:23.429 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:43.930 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:51:43.931 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:43.931 parsl:188 Rank:0 [DEBUG]  Return from heartbeat: None
+2020-02-05 12:51:43.931 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:43.932 parsl:243 Rank:0 [DEBUG]  Got heartbeat from interchange
+2020-02-05 12:51:43.932 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:43.932 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:43.932 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:51:43.933 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:43.933 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:43.953 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:51:43.953 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:43.953 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:43.993 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:51:43.993 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:43.994 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:44.074 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:51:44.074 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:44.074 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:44.234 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:51:44.235 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:44.235 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:44.555 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:51:44.555 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:44.555 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:45.196 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:51:45.196 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:45.197 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:46.478 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:51:46.478 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:46.478 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:49.041 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:51:49.041 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:49.041 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:51:54.167 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:51:54.167 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:51:54.167 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:52:04.417 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:52:04.418 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:52:04.418 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:52:24.919 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:52:24.920 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:52:24.920 parsl:188 Rank:0 [DEBUG]  Return from heartbeat: None
+2020-02-05 12:52:24.920 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:52:24.921 parsl:243 Rank:0 [DEBUG]  Got heartbeat from interchange
+2020-02-05 12:52:24.921 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:52:24.921 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:52:24.921 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:52:24.921 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:52:24.921 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:52:24.941 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:52:24.942 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:52:24.942 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:52:24.982 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:52:24.982 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:52:24.982 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:52:25.062 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:52:25.063 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:52:25.063 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:52:25.223 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:52:25.223 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:52:25.223 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:52:25.544 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:52:25.544 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:52:25.544 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:52:26.185 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:52:26.185 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:52:26.185 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:52:27.467 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:52:27.467 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:52:27.467 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:52:30.030 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:52:30.030 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:52:30.030 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:52:35.155 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:52:35.155 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:52:35.156 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:52:45.406 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:52:45.406 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:52:45.407 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:05.907 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:53:05.908 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:05.908 parsl:188 Rank:0 [DEBUG]  Return from heartbeat: None
+2020-02-05 12:53:05.908 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:05.909 parsl:243 Rank:0 [DEBUG]  Got heartbeat from interchange
+2020-02-05 12:53:05.909 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:05.909 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:05.909 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:53:05.909 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:05.909 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:05.929 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:53:05.929 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:05.929 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:05.970 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:53:05.970 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:05.970 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:06.050 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:53:06.050 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:06.050 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:06.210 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:53:06.210 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:06.210 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:06.531 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:53:06.531 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:06.531 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:07.172 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:53:07.172 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:07.172 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:08.453 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:53:08.453 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:08.454 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:11.016 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:53:11.016 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:11.016 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:16.142 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:53:16.142 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:16.142 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:26.392 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:53:26.393 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:26.393 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:46.894 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:53:46.894 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:46.894 parsl:188 Rank:0 [DEBUG]  Return from heartbeat: None
+2020-02-05 12:53:46.894 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:46.895 parsl:243 Rank:0 [DEBUG]  Got heartbeat from interchange
+2020-02-05 12:53:46.895 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:46.895 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:46.896 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:53:46.896 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:46.896 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:46.916 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:53:46.916 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:46.916 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:46.956 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:53:46.957 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:46.957 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:47.037 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:53:47.037 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:47.037 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:47.198 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:53:47.198 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:47.198 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:47.518 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:53:47.518 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:47.519 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:48.159 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:53:48.160 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:48.160 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:49.441 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:53:49.441 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:49.441 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:52.004 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:53:52.004 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:52.004 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:53:57.130 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:53:57.130 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:53:57.130 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:54:07.373 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:54:07.374 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:54:07.374 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:54:27.874 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:54:27.875 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:54:27.875 parsl:188 Rank:0 [DEBUG]  Return from heartbeat: None
+2020-02-05 12:54:27.875 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:54:27.876 parsl:243 Rank:0 [DEBUG]  Got heartbeat from interchange
+2020-02-05 12:54:27.876 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:54:27.876 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:54:27.876 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:54:27.876 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:54:27.876 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:54:27.896 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:54:27.896 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:54:27.897 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:54:27.937 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:54:27.937 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:54:27.937 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:54:28.017 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:54:28.017 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:54:28.018 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:54:28.178 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:54:28.178 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:54:28.178 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:54:28.499 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:54:28.499 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:54:28.499 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:54:29.140 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:54:29.140 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:54:29.140 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:54:30.421 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:54:30.422 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:54:30.422 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:54:32.984 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:54:32.984 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:54:32.985 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:54:38.109 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:54:38.110 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:54:38.110 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:54:48.355 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:54:48.356 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:54:48.356 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:55:08.843 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:55:08.844 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:55:08.844 parsl:188 Rank:0 [DEBUG]  Return from heartbeat: None
+2020-02-05 12:55:08.844 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:55:08.845 parsl:243 Rank:0 [DEBUG]  Got heartbeat from interchange
+2020-02-05 12:55:08.845 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:55:08.845 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:55:08.845 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:55:08.845 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:55:08.845 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:55:08.866 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:55:08.866 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:55:08.866 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:55:08.906 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:55:08.906 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:55:08.906 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:55:08.987 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:55:08.987 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:55:08.987 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:55:09.147 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:55:09.147 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:55:09.147 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:55:09.468 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:55:09.468 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:55:09.468 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:55:10.109 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:55:10.109 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:55:10.109 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:55:11.391 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:55:11.391 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:55:11.391 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:55:13.954 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:55:13.954 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:55:13.955 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:55:19.080 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:55:19.080 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:55:19.080 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:55:29.331 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:55:29.331 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:55:29.331 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:55:49.830 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:55:49.830 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:55:49.830 parsl:188 Rank:0 [DEBUG]  Return from heartbeat: None
+2020-02-05 12:55:49.830 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:55:49.831 parsl:243 Rank:0 [DEBUG]  Got heartbeat from interchange
+2020-02-05 12:55:49.831 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:55:49.831 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:55:49.832 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:55:49.832 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:55:49.832 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:55:49.852 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:55:49.852 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:55:49.852 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:55:49.892 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:55:49.892 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:55:49.892 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:55:49.973 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:55:49.973 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:55:49.973 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:55:50.133 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:55:50.133 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:55:50.134 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:55:50.454 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:55:50.454 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:55:50.454 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:55:51.095 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:55:51.095 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:55:51.095 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
+2020-02-05 12:55:52.377 parsl:256 Rank:0 [DEBUG]  [TASK_PULL_THREAD] No incoming tasks
+2020-02-05 12:55:52.377 parsl:218 Rank:0 [DEBUG]  [TASK_PULL_THREAD] ready workers:48, pending tasks:0
+2020-02-05 12:55:52.377 parsl:225 Rank:0 [DEBUG]  [TASK_PULL_THREAD] Requesting tasks: 48
