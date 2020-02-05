@@ -1,0 +1,49 @@
+#!/bin/bash
+#$ -S /bin/bash
+#$ -o /home/users/ellenrichards/GRETA/runinfo/053/submit_scripts/parsl.auto.1580866206.7006269.submit.stdout
+#$ -e /home/users/ellenrichards/GRETA/runinfo/053/submit_scripts/parsl.auto.1580866206.7006269.submit.stderr
+#$ -cwd
+#$ -l h_rt=10
+
+
+
+
+export JOBNAME="parsl.auto.1580866206.7006269"
+
+export CORES=$(getconf _NPROCESSORS_ONLN)
+echo "Found cores : $CORES"
+WORKERCOUNT=1
+
+CMD ( ) {
+mkdir -p runinfo/053
+cat <<EOF > runinfo/053/ipengine.85a47299-76c6-4a1a-a60f-d02de8426842.json
+{
+  "ssh": "",
+  "interface": "tcp://*",
+  "registration": 53433,
+  "control": 35096,
+  "mux": 38704,
+  "hb_ping": 49603,
+  "hb_pong": 50871,
+  "task": 45457,
+  "iopub": 52393,
+  "key": "51c9a90e-5442a0ce0fb9177161026ab9",
+  "location": "mayo.blt.lclark.local",
+  "pack": "json",
+  "unpack": "json",
+  "signature_scheme": "hmac-sha256"
+}
+EOF
+
+mkdir -p 'runinfo/053/engine_logs'
+ipengine --file=runinfo/053/ipengine.85a47299-76c6-4a1a-a60f-d02de8426842.json  >> runinfo/053/engine_logs/$JOBNAME.log 2>&1
+
+}
+for COUNT in $(seq 1 1 $WORKERCOUNT)
+do
+    echo "Launching worker: $COUNT"
+    CMD &
+done
+wait
+echo "All workers done"
+

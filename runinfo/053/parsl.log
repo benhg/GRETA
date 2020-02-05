@@ -1,0 +1,155 @@
+2020-02-04 20:30:04.175 parsl.dataflow.dflow:83 [DEBUG]  Starting DataFlowKernel with config
+Config(
+    app_cache=True, 
+    checkpoint_files=None, 
+    checkpoint_mode=None, 
+    checkpoint_period=None, 
+    data_management_max_threads=10, 
+    executors=[IPyParallelExecutor(
+        container_image=None, 
+        controller=Controller(
+            interfaces=None, 
+            ipython_dir='~/.ipython', 
+            log=True, 
+            mode='auto', 
+            port=None, 
+            port_range=None, 
+            profile='default', 
+            public_ip=None, 
+            reuse=False
+        ), 
+        engine_debug_level=None, 
+        engine_dir=None, 
+        label='workers', 
+        managed=True, 
+        provider=GridEngineProvider(
+            channel=LocalChannel(
+                envs={}, 
+                script_dir=None, 
+                userhome='/home/users/ellenrichards/GRETA'
+            ), 
+            init_blocks=1, 
+            launcher=SingleNodeLauncher(), 
+            max_blocks=20, 
+            min_blocks=0, 
+            nodes_per_block=1, 
+            parallelism=1, 
+            scheduler_options='', 
+            walltime='00:10:00', 
+            worker_init=''
+        ), 
+        storage_access=None, 
+        workers_per_node=1, 
+        working_dir=None
+    ), ThreadPoolExecutor(
+        label='login', 
+        managed=True, 
+        max_threads=20, 
+        storage_access=None, 
+        thread_name_prefix='', 
+        working_dir=None
+    )], 
+    initialize_logging=True, 
+    lazy_errors=True, 
+    max_idletime=120.0, 
+    monitoring=None, 
+    retries=0, 
+    run_dir='runinfo', 
+    strategy='simple', 
+    usage_tracking=False
+)
+2020-02-04 20:30:04.176 parsl.dataflow.dflow:84 [INFO]  Parsl version: 0.9.0
+2020-02-04 20:30:04.176 parsl.dataflow.usage_tracking.usage:126 [DEBUG]  Tracking status: False
+2020-02-04 20:30:04.176 parsl.dataflow.usage_tracking.usage:127 [DEBUG]  Testing mode   : False
+2020-02-04 20:30:04.176 parsl.dataflow.dflow:110 [INFO]  Run id is: 3b04f582-7dc8-49f9-b5dc-173c4ae45137
+2020-02-04 20:30:04.258 parsl.dataflow.memoization:52 [INFO]  App caching initialized
+2020-02-04 20:30:04.258 parsl.executors.ipp_controller:99 [DEBUG]  Starting ipcontroller with 'ipcontroller --ipython-dir=/home/users/ellenrichards/GRETA/runinfo/053 --ip=* --profile=workers   '
+2020-02-04 20:30:06.667 parsl.executors.ipp:104 [DEBUG]  Waiting for /home/users/ellenrichards/GRETA/runinfo/053/profile_workers/security/ipcontroller-client.json
+2020-02-04 20:30:06.694 parsl.executors.ipp:120 [DEBUG]  Starting IPyParallelExecutor with provider:
+GridEngineProvider(
+    channel=LocalChannel(
+        envs={}, 
+        script_dir='/home/users/ellenrichards/GRETA/runinfo/053/submit_scripts', 
+        userhome='/home/users/ellenrichards/GRETA'
+    ), 
+    init_blocks=1, 
+    launcher=SingleNodeLauncher(), 
+    max_blocks=20, 
+    min_blocks=0, 
+    nodes_per_block=1, 
+    parallelism=1, 
+    scheduler_options='', 
+    walltime='00:10:00', 
+    worker_init=''
+)
+2020-02-04 20:30:06.700 parsl.providers.grid_engine.grid_engine:96 [DEBUG]  Requesting one block with 1 nodes per block and 1 tasks per node
+2020-02-04 20:30:06.700 parsl.providers.grid_engine.grid_engine:139 [DEBUG]  Writing submit script
+2020-02-04 20:30:06.738 parsl.executors.ipp:239 [DEBUG]  Launched block 0:19939
+2020-02-04 20:30:06.738 parsl.executors.ipp:246 [ERROR]  No execution provider available
+2020-02-04 20:30:06.739 parsl.executors.ipp:129 [DEBUG]  Starting executor
+2020-02-04 20:30:06.740 parsl.dataflow.strategy:125 [DEBUG]  Scaling strategy: simple
+2020-02-04 20:30:06.849 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 20:30:06.849 parsl.dataflow.dflow:708 [INFO]  Task 0 submitted for App star_index, waiting on tasks []
+2020-02-04 20:30:06.850 parsl.dataflow.dflow:714 [DEBUG]  Task 0 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7fef59bc2198 state=pending>>
+2020-02-04 20:30:06.995 parsl.dataflow.dflow:452 [INFO]  Task 0 launched on executor workers
+2020-02-04 20:30:07.780 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 1 active tasks, 0/0/1 running/submitted/pending blocks, and 0 connected workers
+2020-02-04 20:30:12.781 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 1 active tasks, 0/0/1 running/submitted/pending blocks, and 0 connected workers
+2020-02-04 20:30:17.779 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 1 active tasks, 1/0/0 running/submitted/pending blocks, and 0 connected workers
+2020-02-04 20:30:22.781 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 1 active tasks, 1/0/0 running/submitted/pending blocks, and 0 connected workers
+2020-02-04 20:30:25.496 parsl.dataflow.dflow:288 [INFO]  Task 0 completed
+2020-02-04 20:30:25.497 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-02-04 20:30:25.497 parsl.dataflow.dflow:708 [INFO]  Task 1 submitted for App star_align, waiting on tasks []
+2020-02-04 20:30:25.497 parsl.dataflow.dflow:714 [DEBUG]  Task 1 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7feefbb98f98 state=pending>>
+2020-02-04 20:30:25.499 parsl.dataflow.dflow:452 [INFO]  Task 1 launched on executor workers
+2020-02-04 20:30:27.781 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 1 active tasks, 1/0/0 running/submitted/pending blocks, and 1 connected workers
+2020-02-04 20:30:32.781 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 1 active tasks, 0/0/0 running/submitted/pending blocks, and 1 connected workers
+2020-02-04 20:30:32.782 parsl.dataflow.strategy:259 [DEBUG]  Requesting 1 more blocks
+2020-02-04 20:30:32.782 parsl.providers.grid_engine.grid_engine:96 [DEBUG]  Requesting one block with 1 nodes per block and 1 tasks per node
+2020-02-04 20:30:32.783 parsl.providers.grid_engine.grid_engine:139 [DEBUG]  Writing submit script
+2020-02-04 20:30:32.821 parsl.executors.ipp:239 [DEBUG]  Launched block 0:19940
+2020-02-04 20:30:32.821 parsl.executors.ipp:246 [ERROR]  No execution provider available
+2020-02-04 20:30:37.783 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 1 active tasks, 0/0/1 running/submitted/pending blocks, and 1 connected workers
+2020-02-04 20:30:42.781 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 1 active tasks, 0/0/1 running/submitted/pending blocks, and 1 connected workers
+2020-02-04 20:30:47.782 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 1 active tasks, 1/0/0 running/submitted/pending blocks, and 1 connected workers
+2020-02-04 20:30:52.781 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 1 active tasks, 1/0/0 running/submitted/pending blocks, and 1 connected workers
+2020-02-04 20:30:57.781 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 1 active tasks, 1/0/0 running/submitted/pending blocks, and 2 connected workers
+2020-02-04 20:31:02.781 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 1 active tasks, 0/0/0 running/submitted/pending blocks, and 2 connected workers
+2020-02-04 20:31:02.781 parsl.dataflow.strategy:259 [DEBUG]  Requesting 1 more blocks
+2020-02-04 20:31:02.781 parsl.providers.grid_engine.grid_engine:96 [DEBUG]  Requesting one block with 1 nodes per block and 1 tasks per node
+2020-02-04 20:31:02.782 parsl.providers.grid_engine.grid_engine:139 [DEBUG]  Writing submit script
+2020-02-04 20:31:02.820 parsl.executors.ipp:239 [DEBUG]  Launched block 0:19941
+2020-02-04 20:31:02.820 parsl.executors.ipp:246 [ERROR]  No execution provider available
+2020-02-04 20:31:07.785 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 1 active tasks, 0/0/1 running/submitted/pending blocks, and 1 connected workers
+2020-02-04 20:31:07.989 parsl.dataflow.dflow:257 [DEBUG]  Task 1 failed
+2020-02-04 20:31:07.989 parsl.dataflow.dflow:279 [ERROR]  Task 1 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/local/cluster/lib/python3.6/site-packages/parsl/dataflow/dflow.py", line 252, in handle_exec_update
+    res = future.result()
+  File "/local/cluster/lib/python3.6/concurrent/futures/_base.py", line 425, in result
+    return self.__get_result()
+  File "/local/cluster/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+  File "/local/cluster/lib/python3.6/site-packages/ipyparallel/client/asyncresult.py", line 226, in _resolve_result
+    raise r
+ipyparallel.error.RemoteError: EngineError(Engine b'bebb8f08-a51cbcb377d041cc22ac4944' died while running task '5dd585d9-9a1e60d7c8284774fd2f21dc')
+2020-02-04 20:31:12.785 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 0 active tasks, 0/0/1 running/submitted/pending blocks, and 1 connected workers
+2020-02-04 20:31:12.786 parsl.dataflow.strategy:226 [DEBUG]  Executor workers has 0 active tasks; starting kill timer (if idle time exceeds 120.0s, resources will be removed)
+2020-02-04 20:31:17.782 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 0 active tasks, 1/0/0 running/submitted/pending blocks, and 1 connected workers
+2020-02-04 20:31:22.782 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 0 active tasks, 1/0/0 running/submitted/pending blocks, and 1 connected workers
+2020-02-04 20:31:27.782 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 0 active tasks, 1/0/0 running/submitted/pending blocks, and 2 connected workers
+2020-02-04 20:31:32.782 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 0 active tasks, 0/0/0 running/submitted/pending blocks, and 2 connected workers
+2020-02-04 20:31:37.787 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 0 active tasks, 0/0/0 running/submitted/pending blocks, and 1 connected workers
+2020-02-04 20:31:42.785 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 0 active tasks, 0/0/0 running/submitted/pending blocks, and 1 connected workers
+2020-02-04 20:31:47.783 parsl.dataflow.strategy:200 [DEBUG]  Executor workers has 0 active tasks, 0/0/0 running/submitted/pending blocks, and 1 connected workers
+2020-02-04 20:31:51.947 parsl.dataflow.dflow:864 [INFO]  DFK cleanup initiated
+2020-02-04 20:31:51.947 parsl.dataflow.dflow:750 [INFO]  Summary of tasks in DFK:
+2020-02-04 20:31:51.947 parsl.dataflow.dflow:781 [INFO]  Tasks in state States.done: 0
+2020-02-04 20:31:51.948 parsl.dataflow.dflow:781 [INFO]  Tasks in state States.failed: 1
+2020-02-04 20:31:51.948 parsl.dataflow.dflow:788 [INFO]  End of summary
+2020-02-04 20:31:51.948 parsl.dataflow.dflow:888 [INFO]  Terminating flow_control and strategy threads
+2020-02-04 20:31:52.009 parsl.executors.ipp:292 [DEBUG]  IPP:Shutdown sequence: Attempting controller kill
+2020-02-04 20:31:52.210 parsl.executors.ipp_controller:159 [DEBUG]  Controller exited with 0
+2020-02-04 20:31:52.210 parsl.executors.ipp:302 [DEBUG]  Done with executor shutdown
+2020-02-04 20:31:52.210 parsl.executors.threads:96 [DEBUG]  Done with executor shutdown
+2020-02-04 20:31:52.210 parsl.executors.threads:96 [DEBUG]  Done with executor shutdown
+2020-02-04 20:31:52.211 parsl.dataflow.dflow:920 [INFO]  DFK cleanup complete

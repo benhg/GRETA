@@ -12,11 +12,12 @@ from parsl.app.app import python_app, bash_app
 from parsl.config import Config
 from parsl.providers import GridEngineProvider
 from parsl.executors import HighThroughputExecutor
+from parsl.executors import IPyParallelExecutor
 from parsl.executors import ThreadPoolExecutor
 from parsl.addresses import address_by_route, address_by_query, address_by_hostname
-
+"""
 config = Config(
-    executors=[HighThroughputExecutor(
+    executors=[HighThroughputExecutor(worker_debug=True, max_workers=2,
                                       address=address_by_route(), 
                                       provider=GridEngineProvider(
                                                                   init_blocks=1, 
@@ -25,6 +26,17 @@ config = Config(
                ThreadPoolExecutor(label="login", max_threads=20)
               ],
 )
+"""
+
+config = Config(                                                                                                                                                                                                                                             
+    executors=[IPyParallelExecutor(workers_per_node=10,                                                                                                                                                                                                                       
+                                      provider=GridEngineProvider(                                                                                                                                                                                           
+                                                                  init_blocks=1,                                                                                                                                                                             
+                                                                  max_blocks=20),                                                                                                                                                                            
+                                      label="workers"),                                                                                                                                                                                                      
+               ThreadPoolExecutor(label="login", max_threads=20)                                                                                                                                                                                             
+              ],                                                                                                                                                                                                                                             
+)  
 
 parsl.set_stream_logger() 
 parsl.load(config)
@@ -178,7 +190,7 @@ def star_index(directory, genomeDir, filename):
 @bash_app(executors=["workers"])
 def star_align(directory, mvalue, svalue, genomeDir):
     import os
-
+    import fnmatch
     svalue = int(svalue)
     svalue = str(svalue)
     outfilenameprefix = directory + mvalue +"/"+ svalue

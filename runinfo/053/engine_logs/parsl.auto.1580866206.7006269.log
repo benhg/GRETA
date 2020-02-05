@@ -1,0 +1,21 @@
+2020-02-04 17:30:18.595 [IPEngineApp] Loading url_file 'runinfo/053/ipengine.85a47299-76c6-4a1a-a60f-d02de8426842.json'
+2020-02-04 17:30:18.625 [IPEngineApp] Registering with controller at tcp://192.168.0.1:53433
+2020-02-04 17:30:18.690 [IPEngineApp] Starting to monitor the heartbeat signal from the hub every 3010 ms.
+2020-02-04 17:30:18.696 [IPEngineApp] Completed registration with id 0
+DEBUG:__main__.1580866225.2341478:Executable: STAR --runThreadN 1 --runMode genomeGenerate --genomeDir  "/home/users/ellenrichards/test_run_1/s008_c41703_g1_i1_m8507/gd" --genomeFastaFiles "/home/users/ellenrichards/test_run_1/s008_c41703_g1_i1_m8507.fasta" --genomeSAindexNbases 2
+Feb 04 17:30:25 ..... started STAR run
+Feb 04 17:30:25 ... starting to generate Genome files
+Feb 04 17:30:25 ... starting to sort Suffix Array. This may take a long time...
+Feb 04 17:30:25 ... sorting Suffix Array chunks and saving them to disk...
+Feb 04 17:30:25 ... loading chunks from disk, packing SA...
+Feb 04 17:30:25 ... finished generating suffix array
+Feb 04 17:30:25 ... generating Suffix Array index
+Feb 04 17:30:25 ... completed Suffix Array index
+Feb 04 17:30:25 ... writing Genome to disk ...
+Feb 04 17:30:25 ... writing Suffix Array to disk ...
+Feb 04 17:30:25 ... writing SAindex to disk
+Feb 04 17:30:25 ..... finished successfully
+DEBUG:__main__.1580866225.5017738:Executable: STAR --runMode alignReads --runThreadN 15 --genomeDir "/home/users/ellenrichards/test_run_1/s008_c41703_g1_i1_m8507/gd"  --readFilesIn /home/users/ellenrichards/binfordlab/raw_reads/"lane1-s008-indexRPI8-ACTTGA-MP1fe_S8_L001_R1_001.fastq"  /home/users/ellenrichards/binfordlab/raw_reads/"lane1-s008-indexRPI8-ACTTGA-MP1fe_S8_L001_R2_001.fastq" --outFileNamePrefix "/home/users/ellenrichards/test_run_1/s008_c41703_g1_i1_m8507/8" --outSAMtype BAM SortedByCoordinate --limitBAMsortRAM 40000000000
+Feb 04 17:30:25 ..... started STAR run
+Feb 04 17:30:25 ..... loading genome
+Feb 04 17:30:25 ..... started mapping

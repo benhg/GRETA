@@ -1,0 +1,16 @@
+2020-02-04 20:27:27.000 interchange:155 [INFO]  Attempting connection to client at 127.0.0.1 on ports: 55933,55104,55105
+2020-02-04 20:27:27.002 interchange:168 [INFO]  Connected to client
+2020-02-04 20:27:27.002 interchange:204 [INFO]  Bound to ports 54743,54747 for incoming worker connections
+2020-02-04 20:27:27.003 interchange:218 [INFO]  Platform info: {'parsl_v': '0.9.0', 'python_v': '3.6.4', 'os': 'Linux', 'hostname': 'mayo.blt.lclark.local', 'dir': '/home/users/ellenrichards/GRETA'}
+2020-02-04 20:27:27.003 interchange:336 [INFO]  Incoming ports bound
+2020-02-04 20:27:27.004 interchange:253 [INFO]  [TASK_PULL_THREAD] Starting
+2020-02-04 20:27:36.684 interchange:397 [INFO]  [MAIN] Adding manager: b'9448db1ab615' to ready queue
+2020-02-04 20:27:36.685 interchange:399 [INFO]  [MAIN] Registration info for manager b'9448db1ab615': {'parsl_v': '0.9.0', 'python_v': '3.6.4', 'worker_count': 48, 'block_id': '0', 'prefetch_capacity': 0, 'max_capacity': 48, 'os': 'Linux', 'hostname': 'bacon.blt.lclark.local', 'dir': '/home/users/ellenrichards/GRETA', 'cpu_count': 12, 'total_memory': 540756623360, 'reg_time': datetime.datetime(2020, 2, 4, 17, 27, 36)}
+2020-02-04 20:27:36.685 interchange:419 [INFO]  [MAIN] Manager b'9448db1ab615' has compatible Parsl version 0.9.0
+2020-02-04 20:27:36.685 interchange:421 [INFO]  [MAIN] Manager b'9448db1ab615' has compatible Python version 3.6
+2020-02-04 20:28:04.945 interchange:397 [INFO]  [MAIN] Adding manager: b'afcb9b9c3807' to ready queue
+2020-02-04 20:28:04.946 interchange:399 [INFO]  [MAIN] Registration info for manager b'afcb9b9c3807': {'parsl_v': '0.9.0', 'python_v': '3.6.4', 'worker_count': 48, 'block_id': '1', 'prefetch_capacity': 0, 'max_capacity': 48, 'os': 'Linux', 'hostname': 'sprouts.blt.lclark.local', 'dir': '/home/users/ellenrichards/GRETA', 'cpu_count': 12, 'total_memory': 404096049152, 'reg_time': datetime.datetime(2020, 2, 4, 17, 28, 4)}
+2020-02-04 20:28:04.946 interchange:419 [INFO]  [MAIN] Manager b'afcb9b9c3807' has compatible Parsl version 0.9.0
+2020-02-04 20:28:04.946 interchange:421 [INFO]  [MAIN] Manager b'afcb9b9c3807' has compatible Python version 3.6
+2020-02-04 20:28:26.462 interchange:306 [INFO]  [CMD] Received HOLD_WORKER for b'9448db1ab615'
+2020-02-04 20:28:26.463 interchange:306 [INFO]  [CMD] Received HOLD_WORKER for b'9448db1ab615'
