@@ -1,6 +1,0 @@
-2020-02-04 20:18:04.244 interchange:155 [INFO]  Attempting connection to client at 127.0.0.1 on ports: 55921,55493,55961
-2020-02-04 20:18:04.246 interchange:168 [INFO]  Connected to client
-2020-02-04 20:18:04.246 interchange:204 [INFO]  Bound to ports 54193,54116 for incoming worker connections
-2020-02-04 20:18:04.247 interchange:218 [INFO]  Platform info: {'parsl_v': '0.9.0', 'python_v': '3.6.4', 'os': 'Linux', 'hostname': 'mayo.blt.lclark.local', 'dir': '/home/users/ellenrichards/GRETA'}
-2020-02-04 20:18:04.247 interchange:336 [INFO]  Incoming ports bound
-2020-02-04 20:18:04.248 interchange:253 [INFO]  [TASK_PULL_THREAD] Starting

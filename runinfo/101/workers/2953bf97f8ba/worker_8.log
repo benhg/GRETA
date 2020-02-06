@@ -1,4 +1,0 @@
-2020-02-05 12:48:18.756 worker_log:467 Rank:8 [INFO]  Worker 8 started
-2020-02-05 12:48:18.756 worker_log:469 Rank:8 [DEBUG]  Debug logging enabled
-2020-02-05 12:48:18.862 worker_log:478 Rank:8 [INFO]  Received task 57
-2020-02-05 12:48:20.396 worker_log:496 Rank:8 [INFO]  Completed task 57
